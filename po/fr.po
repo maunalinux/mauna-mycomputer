@@ -1,0 +1,478 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-01 16:27-0300\n"
+"PO-Revision-Date: 2023-02-03 17:09-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: ui/MainWindow.glade:14
+msgid "About Mauna My Computer"
+msgstr "À propos d'Mauna Mon ordinateur"
+
+#: ui/MainWindow.glade:20
+msgid "UI for information and management of disks on your computer."
+msgstr "Interface utilisateur pour l'information et la gestion des disques sur votre ordinateur."
+
+#: ui/MainWindow.glade:22
+msgid "Website"
+msgstr "Site Internet"
+
+#: ui/MainWindow.glade:136 src/MainWindow.py:2314 src/MainWindow.py:2322
+#: src/MainWindow.py:2355
+msgid "App Settings"
+msgstr "À propos de l'application"
+
+#: ui/MainWindow.glade:192 src/MainWindow.py:2338 src/MainWindow.py:2347
+msgid "Control Panel"
+msgstr "Panneau de Commande"
+
+#: ui/MainWindow.glade:248 src/MainWindow.py:328
+msgid "About Mauna"
+msgstr "À propos d'Mauna"
+
+#: ui/MainWindow.glade:304
+msgid "About App"
+msgstr "À propos de l'application"
+
+#: ui/MainWindow.glade:347
+msgid "Folder :"
+msgstr "Dossier :"
+
+#: ui/MainWindow.glade:364
+msgid "Select Folder"
+msgstr "Sélectionner le dossier"
+
+#: ui/MainWindow.glade:389 ui/MainWindow.glade:808
+msgid "Name :"
+msgstr "Nom :"
+
+#: ui/MainWindow.glade:428 ui/MainWindow.glade:847
+msgid "Icon :"
+msgstr "Icône :"
+
+#: ui/MainWindow.glade:480 ui/MainWindow.glade:899
+msgid "Preview :"
+msgstr "Aperçu :"
+
+#: ui/MainWindow.glade:572
+msgid "Add"
+msgstr "Ajouter"
+
+#: ui/MainWindow.glade:709
+msgid "Remove Shortcut"
+msgstr "Supprimer le Raccourci"
+
+#: ui/MainWindow.glade:765
+msgid "Edit Shortcut"
+msgstr "Modifier le Raccourci"
+
+#: ui/MainWindow.glade:991
+msgid "Update"
+msgstr "Mettre à jour"
+
+#. Translators: Server as any successfully connected network address
+#: ui/MainWindow.glade:1045
+msgid "No recent servers found"
+msgstr "Aucun serveur récent trouvé"
+
+#: ui/MainWindow.glade:1072
+msgid "Recent Servers"
+msgstr "Serveurs récents"
+
+#: ui/MainWindow.glade:1178
+msgid "Device Model"
+msgstr "Modèle d'appareil"
+
+#: ui/MainWindow.glade:1205
+msgid "Device Path"
+msgstr "Chemin de l'appareil"
+
+#: ui/MainWindow.glade:1221
+msgid "Mountpoint"
+msgstr "Point de montage"
+
+#: ui/MainWindow.glade:1237
+msgid "Filesystem"
+msgstr "Système de fichiers"
+
+#: ui/MainWindow.glade:1264
+msgid "Used"
+msgstr "Utilisé"
+
+#: ui/MainWindow.glade:1280
+msgid "Free"
+msgstr "Libérer"
+
+#: ui/MainWindow.glade:1296
+msgid "Total"
+msgstr "Le total"
+
+#: ui/MainWindow.glade:1634
+msgid "Ok"
+msgstr "D'accord"
+
+#: ui/MainWindow.glade:1724
+msgid "message"
+msgstr "message"
+
+#: ui/MainWindow.glade:1752
+msgid "Connect As"
+msgstr "Se connecter en tant que"
+
+#: ui/MainWindow.glade:1768
+msgid "Anonymous"
+msgstr "Anonyme"
+
+#: ui/MainWindow.glade:1785
+msgid "Registered User"
+msgstr "Utilisateur enregistré"
+
+#: ui/MainWindow.glade:1831
+msgid "Username:"
+msgstr "Nom d'utilisateur:"
+
+#: ui/MainWindow.glade:1870
+msgid "Domain:"
+msgstr "Domaine:"
+
+#: ui/MainWindow.glade:1909
+msgid "Password:"
+msgstr "Mot de passe:"
+
+#: ui/MainWindow.glade:1957
+msgid "Forget password immediately"
+msgstr "Mot de passe oublié immédiatement"
+
+#: ui/MainWindow.glade:1973
+msgid "Remember password after you logout"
+msgstr "Mémoriser le mot de passe après votre déconnexion"
+
+#: ui/MainWindow.glade:1989
+msgid "Remember forever"
+msgstr "Souviens-toi pour toujours"
+
+#: ui/MainWindow.glade:2027
+msgid "Cancel"
+msgstr "Annuler"
+
+#: ui/MainWindow.glade:2036 ui/MainWindow.glade:2149
+msgid "Connect"
+msgstr "Connecter"
+
+#: ui/MainWindow.glade:2073
+msgid "Connect to Server"
+msgstr "Connecter au serveur"
+
+#: ui/MainWindow.glade:2101
+msgid "Enter server address…"
+msgstr "Entrez l'adresse du serveur…"
+
+#: ui/MainWindow.glade:2189
+msgid "Server Addresses"
+msgstr "Adresses du serveur"
+
+#: ui/MainWindow.glade:2208
+msgid "Server addresses are made up of a protocol prefix and an address. Examples:"
+msgstr "Les adresses de serveur sont composées d'un préfixe de protocole et d'une adresse. Exemples:"
+
+#: ui/MainWindow.glade:2251
+msgid "Available Protocols"
+msgstr "Protocoles disponibles"
+
+#: ui/MainWindow.glade:2267
+msgid "Prefix"
+msgstr "Préfixe"
+
+#: ui/MainWindow.glade:2283
+msgid "AppleTalk"
+msgstr "AppleTalk"
+
+#: ui/MainWindow.glade:2295
+msgid "afp://"
+msgstr "afp://"
+
+#: ui/MainWindow.glade:2307
+msgid "File Transfer Protocol"
+msgstr "File Transfer Protocol"
+
+#: ui/MainWindow.glade:2319
+msgid "ftp:// or ftps://"
+msgstr "ftp:// ou ftps://"
+
+#: ui/MainWindow.glade:2331
+msgid "Network File System"
+msgstr "Network File System"
+
+#: ui/MainWindow.glade:2343
+msgid "Samba"
+msgstr "Samba"
+
+#: ui/MainWindow.glade:2355
+msgid "SSH File Transfer Protocol"
+msgstr "SSH File Transfer Protocol"
+
+#: ui/MainWindow.glade:2367
+msgid "WebDAV"
+msgstr "WebDAV"
+
+#: ui/MainWindow.glade:2379
+msgid "nfs://"
+msgstr "nfs://"
+
+#: ui/MainWindow.glade:2391
+msgid "smb://"
+msgstr "smb://"
+
+#: ui/MainWindow.glade:2403
+msgid "sftp:// or ssh://"
+msgstr "sftp:// ou ssh://"
+
+#: ui/MainWindow.glade:2415
+msgid "dav:// or davs://"
+msgstr "dav:// ou davs://"
+
+#: ui/MainWindow.glade:2600
+msgid "Home"
+msgstr "Home"
+
+#: ui/MainWindow.glade:2721
+msgid "Root"
+msgstr "Root"
+
+#: ui/MainWindow.glade:2794 src/MainWindow.py:984
+msgid "is free of"
+msgstr "est libre de"
+
+#: ui/MainWindow.glade:2910
+msgid "Hard Drives"
+msgstr "Disques Durs"
+
+#: ui/MainWindow.glade:2991
+msgid "Removable Drives"
+msgstr "Disques amovibles"
+
+#: ui/MainWindow.glade:3100
+msgid "Hide places section"
+msgstr "Masquer la section des lieux"
+
+#: ui/MainWindow.glade:3140
+msgid "Close app when Main directories are opened"
+msgstr "Fermer l'application lorsque les répertoires Principaux sont ouverts"
+
+#: ui/MainWindow.glade:3180
+msgid "Close app when Hard Drives are opened"
+msgstr "Fermer l'application lorsque les Disques Durs sont ouverts"
+
+#: ui/MainWindow.glade:3220
+msgid "Close app when Removable Drives are opened"
+msgstr "Fermer l'application lorsque les Lecteurs Amovibles sont ouverts"
+
+#: ui/MainWindow.glade:3260
+msgid "Auto refresh disks (refresh time: 1.5 seconds)"
+msgstr "Rafraîchissement automatique des disques (temps de rafraîchissement : 1,5 seconde)"
+
+#: ui/MainWindow.glade:3300
+msgid "Remember window size"
+msgstr "Se souvenir de la taille de la fenêtre"
+
+#: ui/MainWindow.glade:3340
+msgid "Use dark theme"
+msgstr "Utiliser le thème sombre"
+
+#: ui/MainWindow.glade:3409
+msgid "Restore Defaults"
+msgstr "Réinitialiser"
+
+#: ui/MainWindow.glade:3454 src/MainWindow.py:2333 src/MainWindow.py:2351
+msgid "Home Page"
+msgstr "Page d'accueil"
+
+#: ui/MainWindow.glade:3569
+msgid "My Computer"
+msgstr "Mon Ordinateur"
+
+#: ui/MainWindow.glade:3577
+msgid "Refresh"
+msgstr "Rafraîchir"
+
+#: src/MainWindow.py:227
+msgid "Mauna My Computer"
+msgstr "Mauna Mon Ordinateur"
+
+#: src/MainWindow.py:313
+msgid "Unknown (/etc/os-release syntax error)"
+msgstr "Inconnu (erreur de syntaxe /etc/os-release)"
+
+#: src/MainWindow.py:322
+msgid "Unknown (/etc/os-release file not exists)"
+msgstr "Inconnu (le fichier /etc/os-release n'existe pas)"
+
+#: src/MainWindow.py:350
+msgid "About"
+msgstr "À propos de"
+
+#: src/MainWindow.py:352
+msgid "About System"
+msgstr "À propos du Système"
+
+#: src/MainWindow.py:498
+msgid "Places"
+msgstr "Des lieux"
+
+#: src/MainWindow.py:515
+msgid "Trash is empty"
+msgstr "La Corbeille est vide"
+
+#: src/MainWindow.py:517
+msgid "Trash contains 1 file"
+msgstr "La Corbeille contient 1 fichier"
+
+#: src/MainWindow.py:519
+#, python-format
+msgid "Trash contains %s files"
+msgstr "La corbeille contient %s fichiers"
+
+#: src/MainWindow.py:521 src/MainWindow.py:531
+msgid "Trash"
+msgstr "Poubelle"
+
+#: src/MainWindow.py:527
+msgid "Computer"
+msgstr "L'ordinateur"
+
+#: src/MainWindow.py:528
+msgid "Browse the computer"
+msgstr "Parcourir l'ordinateur"
+
+#: src/MainWindow.py:529
+msgid "Recent"
+msgstr "Récent"
+
+#: src/MainWindow.py:530
+msgid "Recent files"
+msgstr "Fichiers récents"
+
+#: src/MainWindow.py:662
+msgid "Add new"
+msgstr "Ajouter nouveau"
+
+#: src/MainWindow.py:1071
+msgid "Disk is available, click to mount."
+msgstr "Le disque est disponible, cliquez pour monter."
+
+#: src/MainWindow.py:1098
+msgid "Mount"
+msgstr "Monter"
+
+#: src/MainWindow.py:1115
+msgid "Unmount"
+msgstr "Démonter"
+
+#: src/MainWindow.py:1143
+msgid "Eject"
+msgstr "Éjecter"
+
+#: src/MainWindow.py:1168
+msgid "Add Bookmark"
+msgstr "Ajouter un Signet"
+
+#: src/MainWindow.py:1179
+msgid "Remove Bookmark"
+msgstr "Supprimer un Signet"
+
+#: src/MainWindow.py:1216
+msgid "Information"
+msgstr "Information"
+
+#: src/MainWindow.py:1617 src/MainWindow.py:1668
+msgid "Please wait"
+msgstr "Veuillez patienter"
+
+#: src/MainWindow.py:1620
+msgid "Network device is unmounting."
+msgstr "Le périphérique réseau est en cours de démontage."
+
+#: src/MainWindow.py:1627
+msgid "Disk is unmounting."
+msgstr "Le Disque est en cours de démontage."
+
+#: src/MainWindow.py:1631 src/MainWindow.py:1671
+msgid "USB disk is unmounting."
+msgstr "Le disque USB est en cours de démontage."
+
+#: src/MainWindow.py:1633 src/MainWindow.py:1673
+msgid "Card drive is unmounting."
+msgstr "Le lecteur de Carte est en cours de démontage."
+
+#: src/MainWindow.py:1635 src/MainWindow.py:1675
+msgid "Optical disk is unmounting."
+msgstr "Le disque Optique est en cours de démontage."
+
+#: src/MainWindow.py:1638 src/MainWindow.py:1678
+msgid "Optical drive is unmounting."
+msgstr "Le lecteur Optique est en cours de démontage."
+
+#: src/MainWindow.py:1640 src/MainWindow.py:1680
+msgid "Phone is unmounting."
+msgstr "Le Téléphone est en cours de démontage."
+
+#: src/MainWindow.py:1694 src/MainWindow.py:2572
+msgid "Device ejected."
+msgstr "Appareil éjecté."
+
+#: src/MainWindow.py:1808
+msgid "Format"
+msgstr "Format"
+
+#: src/MainWindow.py:1816
+msgid "Mount on Startup"
+msgstr "Montage au démarrage"
+
+#: src/MainWindow.py:2105
+msgid "Error"
+msgstr "Erreur"
+
+#: src/MainWindow.py:2491
+msgid "Unmounting process is done"
+msgstr "Le processus de démontage est terminé"
+
+#: src/MainWindow.py:2495
+msgid "You can eject the network device."
+msgstr "Vous pouvez éjecter le périphérique réseau."
+
+#: src/MainWindow.py:2500
+msgid "You can eject the disk."
+msgstr "Vous pouvez éjecter le disque."
+
+#: src/MainWindow.py:2504
+msgid "You can eject the USB disk."
+msgstr "Vous pouvez éjecter le disque USB."
+
+#: src/MainWindow.py:2506
+msgid "You can eject the card drive."
+msgstr "Vous pouvez éjecter le lecteur de carte."
+
+#: src/MainWindow.py:2508
+msgid "You can eject the optical disk."
+msgstr "Vous pouvez éjecter le disque optique."
+
+#: src/MainWindow.py:2511
+msgid "You can eject the optical drive."
+msgstr "Vous pouvez éjecter le lecteur optique."
+
+#: src/MainWindow.py:2513
+msgid "You can eject the phone."
+msgstr "Vous pouvez éjecter le téléphone."

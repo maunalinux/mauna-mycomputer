@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Mauna My Computer Add to Desktop 
+Comment=Mauna My Computer Add to Desktop
+Exec=/usr/bin/bash /usr/share/mauna/mauna-mycomputer/autostart/mauna-mycomputer-add-to-desktop
+Icon=mauna-mycomputer
+Type=Application
+X-GNOME-Autostart-enabled=true

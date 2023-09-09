@@ -1,0 +1,478 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-01 16:27-0300\n"
+"PO-Revision-Date: 2023-02-05 12:52-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: ui/MainWindow.glade:14
+msgid "About Mauna My Computer"
+msgstr "Tentang Mauna Komputer Saya"
+
+#: ui/MainWindow.glade:20
+msgid "UI for information and management of disks on your computer."
+msgstr "UI untuk informasi dan pengelolaan disk di komputer Anda."
+
+#: ui/MainWindow.glade:22
+msgid "Website"
+msgstr "Situs web"
+
+#: ui/MainWindow.glade:136 src/MainWindow.py:2314 src/MainWindow.py:2322
+#: src/MainWindow.py:2355
+msgid "App Settings"
+msgstr "Pengaturan aplikasi"
+
+#: ui/MainWindow.glade:192 src/MainWindow.py:2338 src/MainWindow.py:2347
+msgid "Control Panel"
+msgstr "Panel kendali"
+
+#: ui/MainWindow.glade:248 src/MainWindow.py:328
+msgid "About Mauna"
+msgstr "Tentang Mauna"
+
+#: ui/MainWindow.glade:304
+msgid "About App"
+msgstr "Tentang Aplikasi"
+
+#: ui/MainWindow.glade:347
+msgid "Folder :"
+msgstr "Mapel :"
+
+#: ui/MainWindow.glade:364
+msgid "Select Folder"
+msgstr "Pilih folder"
+
+#: ui/MainWindow.glade:389 ui/MainWindow.glade:808
+msgid "Name :"
+msgstr "Nama :"
+
+#: ui/MainWindow.glade:428 ui/MainWindow.glade:847
+msgid "Icon :"
+msgstr "Ikon :"
+
+#: ui/MainWindow.glade:480 ui/MainWindow.glade:899
+msgid "Preview :"
+msgstr "Pratinjau :"
+
+#: ui/MainWindow.glade:572
+msgid "Add"
+msgstr "Menambahkan"
+
+#: ui/MainWindow.glade:709
+msgid "Remove Shortcut"
+msgstr "Hapus Pintasan"
+
+#: ui/MainWindow.glade:765
+msgid "Edit Shortcut"
+msgstr "Edit Pintasan"
+
+#: ui/MainWindow.glade:991
+msgid "Update"
+msgstr "Memperbarui"
+
+#. Translators: Server as any successfully connected network address
+#: ui/MainWindow.glade:1045
+msgid "No recent servers found"
+msgstr "Tidak ada server terbaru yang ditemukan"
+
+#: ui/MainWindow.glade:1072
+msgid "Recent Servers"
+msgstr "Server Terbaru"
+
+#: ui/MainWindow.glade:1178
+msgid "Device Model"
+msgstr "Model Perangkat"
+
+#: ui/MainWindow.glade:1205
+msgid "Device Path"
+msgstr "Jalur Perangkat"
+
+#: ui/MainWindow.glade:1221
+msgid "Mountpoint"
+msgstr "Titik gunung"
+
+#: ui/MainWindow.glade:1237
+msgid "Filesystem"
+msgstr "Berkas sistem"
+
+#: ui/MainWindow.glade:1264
+msgid "Used"
+msgstr "Digunakan"
+
+#: ui/MainWindow.glade:1280
+msgid "Free"
+msgstr "Bebas"
+
+#: ui/MainWindow.glade:1296
+msgid "Total"
+msgstr "Total"
+
+#: ui/MainWindow.glade:1634
+msgid "Ok"
+msgstr "Oke"
+
+#: ui/MainWindow.glade:1724
+msgid "message"
+msgstr "pesan"
+
+#: ui/MainWindow.glade:1752
+msgid "Connect As"
+msgstr "Hubungkan Sebagai"
+
+#: ui/MainWindow.glade:1768
+msgid "Anonymous"
+msgstr "Anonim"
+
+#: ui/MainWindow.glade:1785
+msgid "Registered User"
+msgstr "Pengguna Terdaftar"
+
+#: ui/MainWindow.glade:1831
+msgid "Username:"
+msgstr "Nama belakang:"
+
+#: ui/MainWindow.glade:1870
+msgid "Domain:"
+msgstr "Domain:"
+
+#: ui/MainWindow.glade:1909
+msgid "Password:"
+msgstr "Kata sandi:"
+
+#: ui/MainWindow.glade:1957
+msgid "Forget password immediately"
+msgstr "Lupa kata sandi segera"
+
+#: ui/MainWindow.glade:1973
+msgid "Remember password after you logout"
+msgstr "Ingat kata sandi setelah Anda keluar"
+
+#: ui/MainWindow.glade:1989
+msgid "Remember forever"
+msgstr "Ingat selamanya"
+
+#: ui/MainWindow.glade:2027
+msgid "Cancel"
+msgstr "Membatalkan"
+
+#: ui/MainWindow.glade:2036 ui/MainWindow.glade:2149
+msgid "Connect"
+msgstr "Menghubung"
+
+#: ui/MainWindow.glade:2073
+msgid "Connect to Server"
+msgstr "Sambungkan ke server"
+
+#: ui/MainWindow.glade:2101
+msgid "Enter server address…"
+msgstr "Masukkan alamat server…"
+
+#: ui/MainWindow.glade:2189
+msgid "Server Addresses"
+msgstr "Alamat Server"
+
+#: ui/MainWindow.glade:2208
+msgid "Server addresses are made up of a protocol prefix and an address. Examples:"
+msgstr "Alamat server terdiri dari awalan protokol dan alamat. Contoh:"
+
+#: ui/MainWindow.glade:2251
+msgid "Available Protocols"
+msgstr "Protokol yang Tersedia"
+
+#: ui/MainWindow.glade:2267
+msgid "Prefix"
+msgstr "Awalan"
+
+#: ui/MainWindow.glade:2283
+msgid "AppleTalk"
+msgstr "AppleTalk"
+
+#: ui/MainWindow.glade:2295
+msgid "afp://"
+msgstr "afp://"
+
+#: ui/MainWindow.glade:2307
+msgid "File Transfer Protocol"
+msgstr "File Transfer Protocol"
+
+#: ui/MainWindow.glade:2319
+msgid "ftp:// or ftps://"
+msgstr "ftp:// atau ftps://"
+
+#: ui/MainWindow.glade:2331
+msgid "Network File System"
+msgstr "Network File System"
+
+#: ui/MainWindow.glade:2343
+msgid "Samba"
+msgstr "Samba"
+
+#: ui/MainWindow.glade:2355
+msgid "SSH File Transfer Protocol"
+msgstr "SSH File Transfer Protocol"
+
+#: ui/MainWindow.glade:2367
+msgid "WebDAV"
+msgstr "WebDAV"
+
+#: ui/MainWindow.glade:2379
+msgid "nfs://"
+msgstr "nfs://"
+
+#: ui/MainWindow.glade:2391
+msgid "smb://"
+msgstr "smb://"
+
+#: ui/MainWindow.glade:2403
+msgid "sftp:// or ssh://"
+msgstr "sftp:// atau ssh://"
+
+#: ui/MainWindow.glade:2415
+msgid "dav:// or davs://"
+msgstr "dav:// atau davs://"
+
+#: ui/MainWindow.glade:2600
+msgid "Home"
+msgstr "Rumah"
+
+#: ui/MainWindow.glade:2721
+msgid "Root"
+msgstr "Root"
+
+#: ui/MainWindow.glade:2794 src/MainWindow.py:984
+msgid "is free of"
+msgstr "bebas dari"
+
+#: ui/MainWindow.glade:2910
+msgid "Hard Drives"
+msgstr "Hard Drive"
+
+#: ui/MainWindow.glade:2991
+msgid "Removable Drives"
+msgstr "Drive yang Dapat Dilepas"
+
+#: ui/MainWindow.glade:3100
+msgid "Hide places section"
+msgstr "Sembunyikan bagian tempat"
+
+#: ui/MainWindow.glade:3140
+msgid "Close app when Main directories are opened"
+msgstr "Tutup aplikasi saat direktori Utama dibuka"
+
+#: ui/MainWindow.glade:3180
+msgid "Close app when Hard Drives are opened"
+msgstr "Tutup aplikasi saat Hard Drive dibuka"
+
+#: ui/MainWindow.glade:3220
+msgid "Close app when Removable Drives are opened"
+msgstr "Tutup aplikasi saat Drive yang Dapat Dilepas dibuka"
+
+#: ui/MainWindow.glade:3260
+msgid "Auto refresh disks (refresh time: 1.5 seconds)"
+msgstr "Refresh disk otomatis (waktu refresh: 1,5 detik)"
+
+#: ui/MainWindow.glade:3300
+msgid "Remember window size"
+msgstr "Ingat ukuran jendela"
+
+#: ui/MainWindow.glade:3340
+msgid "Use dark theme"
+msgstr "Gunakan tema gelap"
+
+#: ui/MainWindow.glade:3409
+msgid "Restore Defaults"
+msgstr "Kembalikan Default"
+
+#: ui/MainWindow.glade:3454 src/MainWindow.py:2333 src/MainWindow.py:2351
+msgid "Home Page"
+msgstr "Halaman Beranda"
+
+#: ui/MainWindow.glade:3569
+msgid "My Computer"
+msgstr "Komputer saya"
+
+#: ui/MainWindow.glade:3577
+msgid "Refresh"
+msgstr "Menyegarkan"
+
+#: src/MainWindow.py:227
+msgid "Mauna My Computer"
+msgstr "Mauna Komputer Saya"
+
+#: src/MainWindow.py:313
+msgid "Unknown (/etc/os-release syntax error)"
+msgstr "Tidak diketahui (/etc/os-release kesalahan sintaksis)"
+
+#: src/MainWindow.py:322
+msgid "Unknown (/etc/os-release file not exists)"
+msgstr "Tidak diketahui (/etc/os-release file tidak ada)"
+
+#: src/MainWindow.py:350
+msgid "About"
+msgstr "Tentang"
+
+#: src/MainWindow.py:352
+msgid "About System"
+msgstr "Tentang Sistem"
+
+#: src/MainWindow.py:498
+msgid "Places"
+msgstr "Tempat"
+
+#: src/MainWindow.py:515
+msgid "Trash is empty"
+msgstr "Sampah kosong"
+
+#: src/MainWindow.py:517
+msgid "Trash contains 1 file"
+msgstr "Sampah berisi 1 file"
+
+#: src/MainWindow.py:519
+#, python-format
+msgid "Trash contains %s files"
+msgstr "Sampah berisi %s files"
+
+#: src/MainWindow.py:521 src/MainWindow.py:531
+msgid "Trash"
+msgstr "Sampah"
+
+#: src/MainWindow.py:527
+msgid "Computer"
+msgstr "Komputer"
+
+#: src/MainWindow.py:528
+msgid "Browse the computer"
+msgstr "Jelajahi komputer"
+
+#: src/MainWindow.py:529
+msgid "Recent"
+msgstr "Terkini"
+
+#: src/MainWindow.py:530
+msgid "Recent files"
+msgstr "File terbaru"
+
+#: src/MainWindow.py:662
+msgid "Add new"
+msgstr "Tambah baru"
+
+#: src/MainWindow.py:1071
+msgid "Disk is available, click to mount."
+msgstr "Disk tersedia, klik untuk memasang."
+
+#: src/MainWindow.py:1098
+msgid "Mount"
+msgstr "Gunung"
+
+#: src/MainWindow.py:1115
+msgid "Unmount"
+msgstr "Lepas"
+
+#: src/MainWindow.py:1143
+msgid "Eject"
+msgstr "Mengeluarkan"
+
+#: src/MainWindow.py:1168
+msgid "Add Bookmark"
+msgstr "Tambah bookmark"
+
+#: src/MainWindow.py:1179
+msgid "Remove Bookmark"
+msgstr "Hapus bookmark"
+
+#: src/MainWindow.py:1216
+msgid "Information"
+msgstr "Informasi"
+
+#: src/MainWindow.py:1617 src/MainWindow.py:1668
+msgid "Please wait"
+msgstr "Harap tunggu"
+
+#: src/MainWindow.py:1620
+msgid "Network device is unmounting."
+msgstr "Perangkat jaringan sedang dilepas."
+
+#: src/MainWindow.py:1627
+msgid "Disk is unmounting."
+msgstr "Disk sedang dilepas."
+
+#: src/MainWindow.py:1631 src/MainWindow.py:1671
+msgid "USB disk is unmounting."
+msgstr "Disk USB sedang dilepas."
+
+#: src/MainWindow.py:1633 src/MainWindow.py:1673
+msgid "Card drive is unmounting."
+msgstr "Drive kartu sedang dilepas."
+
+#: src/MainWindow.py:1635 src/MainWindow.py:1675
+msgid "Optical disk is unmounting."
+msgstr "Disk optik sedang dilepas."
+
+#: src/MainWindow.py:1638 src/MainWindow.py:1678
+msgid "Optical drive is unmounting."
+msgstr "Drive optis sedang dilepas."
+
+#: src/MainWindow.py:1640 src/MainWindow.py:1680
+msgid "Phone is unmounting."
+msgstr "Ponsel sedang dilepas."
+
+#: src/MainWindow.py:1694 src/MainWindow.py:2572
+msgid "Device ejected."
+msgstr "Perangkat dikeluarkan."
+
+#: src/MainWindow.py:1808
+msgid "Format"
+msgstr "Format"
+
+#: src/MainWindow.py:1816
+msgid "Mount on Startup"
+msgstr "Pasang di Startup"
+
+#: src/MainWindow.py:2105
+msgid "Error"
+msgstr "Kesalahan"
+
+#: src/MainWindow.py:2491
+msgid "Unmounting process is done"
+msgstr "Proses unmounting dilakukan"
+
+#: src/MainWindow.py:2495
+msgid "You can eject the network device."
+msgstr "Anda dapat mengeluarkan perangkat jaringan."
+
+#: src/MainWindow.py:2500
+msgid "You can eject the disk."
+msgstr "Anda dapat mengeluarkan disk."
+
+#: src/MainWindow.py:2504
+msgid "You can eject the USB disk."
+msgstr "Anda dapat mengeluarkan disk USB."
+
+#: src/MainWindow.py:2506
+msgid "You can eject the card drive."
+msgstr "Anda dapat mengeluarkan drive kartu."
+
+#: src/MainWindow.py:2508
+msgid "You can eject the optical disk."
+msgstr "Anda dapat mengeluarkan disk optik."
+
+#: src/MainWindow.py:2511
+msgid "You can eject the optical drive."
+msgstr "Anda dapat mengeluarkan drive optis."
+
+#: src/MainWindow.py:2513
+msgid "You can eject the phone."
+msgstr "Anda dapat mengeluarkan telepon."

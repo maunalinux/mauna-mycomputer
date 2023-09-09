@@ -1,0 +1,478 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-01 16:27-0300\n"
+"PO-Revision-Date: 2023-02-03 22:09-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: ui/MainWindow.glade:14
+msgid "About Mauna My Computer"
+msgstr "حول مونا جهاز الكمبيوتر الخاص بي"
+
+#: ui/MainWindow.glade:20
+msgid "UI for information and management of disks on your computer."
+msgstr "واجهة المستخدم للمعلومات وإدارة الأقراص على جهاز الكمبيوتر الخاص بك."
+
+#: ui/MainWindow.glade:22
+msgid "Website"
+msgstr "الموقع الإلكتروني"
+
+#: ui/MainWindow.glade:136 src/MainWindow.py:2314 src/MainWindow.py:2322
+#: src/MainWindow.py:2355
+msgid "App Settings"
+msgstr "إعدادات التطبيق"
+
+#: ui/MainWindow.glade:192 src/MainWindow.py:2338 src/MainWindow.py:2347
+msgid "Control Panel"
+msgstr "لوحة التحكم"
+
+#: ui/MainWindow.glade:248 src/MainWindow.py:328
+msgid "About Mauna"
+msgstr "حول مونا"
+
+#: ui/MainWindow.glade:304
+msgid "About App"
+msgstr "حول التطبيق"
+
+#: ui/MainWindow.glade:347
+msgid "Folder :"
+msgstr "مجلد :"
+
+#: ui/MainWindow.glade:364
+msgid "Select Folder"
+msgstr "حدد مجلد"
+
+#: ui/MainWindow.glade:389 ui/MainWindow.glade:808
+msgid "Name :"
+msgstr "اسم :"
+
+#: ui/MainWindow.glade:428 ui/MainWindow.glade:847
+msgid "Icon :"
+msgstr "رمز :"
+
+#: ui/MainWindow.glade:480 ui/MainWindow.glade:899
+msgid "Preview :"
+msgstr "معاينه :"
+
+#: ui/MainWindow.glade:572
+msgid "Add"
+msgstr "جمع"
+
+#: ui/MainWindow.glade:709
+msgid "Remove Shortcut"
+msgstr "إزالة الاختصار"
+
+#: ui/MainWindow.glade:765
+msgid "Edit Shortcut"
+msgstr "تحرير الاختصار"
+
+#: ui/MainWindow.glade:991
+msgid "Update"
+msgstr "تحديث"
+
+#. Translators: Server as any successfully connected network address
+#: ui/MainWindow.glade:1045
+msgid "No recent servers found"
+msgstr "لم يتم العثور على خوادم حديثة"
+
+#: ui/MainWindow.glade:1072
+msgid "Recent Servers"
+msgstr "الخوادم الحديثة"
+
+#: ui/MainWindow.glade:1178
+msgid "Device Model"
+msgstr "طراز الجهاز"
+
+#: ui/MainWindow.glade:1205
+msgid "Device Path"
+msgstr "مسار الجهاز"
+
+#: ui/MainWindow.glade:1221
+msgid "Mountpoint"
+msgstr "ماونت بوينت"
+
+#: ui/MainWindow.glade:1237
+msgid "Filesystem"
+msgstr "نظام الملفات"
+
+#: ui/MainWindow.glade:1264
+msgid "Used"
+msgstr "مستعمل"
+
+#: ui/MainWindow.glade:1280
+msgid "Free"
+msgstr "خال"
+
+#: ui/MainWindow.glade:1296
+msgid "Total"
+msgstr "مجموع"
+
+#: ui/MainWindow.glade:1634
+msgid "Ok"
+msgstr "موافق"
+
+#: ui/MainWindow.glade:1724
+msgid "message"
+msgstr "رسالة"
+
+#: ui/MainWindow.glade:1752
+msgid "Connect As"
+msgstr "تواصل باسم"
+
+#: ui/MainWindow.glade:1768
+msgid "Anonymous"
+msgstr "مجهول"
+
+#: ui/MainWindow.glade:1785
+msgid "Registered User"
+msgstr "مستخدم مسجل"
+
+#: ui/MainWindow.glade:1831
+msgid "Username:"
+msgstr "اسم المستخدم:"
+
+#: ui/MainWindow.glade:1870
+msgid "Domain:"
+msgstr "المجال:"
+
+#: ui/MainWindow.glade:1909
+msgid "Password:"
+msgstr "شعار:"
+
+#: ui/MainWindow.glade:1957
+msgid "Forget password immediately"
+msgstr "نسيت كلمة المرور فورا"
+
+#: ui/MainWindow.glade:1973
+msgid "Remember password after you logout"
+msgstr "تذكر كلمة المرور بعد تسجيل الخروج"
+
+#: ui/MainWindow.glade:1989
+msgid "Remember forever"
+msgstr "تذكر إلى الأبد"
+
+#: ui/MainWindow.glade:2027
+msgid "Cancel"
+msgstr "إلغاء الأمر"
+
+#: ui/MainWindow.glade:2036 ui/MainWindow.glade:2149
+msgid "Connect"
+msgstr "عشق"
+
+#: ui/MainWindow.glade:2073
+msgid "Connect to Server"
+msgstr "الاتصال بالخادم"
+
+#: ui/MainWindow.glade:2101
+msgid "Enter server address…"
+msgstr "أدخل عنوان الخادم..."
+
+#: ui/MainWindow.glade:2189
+msgid "Server Addresses"
+msgstr "عناوين الخادم"
+
+#: ui/MainWindow.glade:2208
+msgid "Server addresses are made up of a protocol prefix and an address. Examples:"
+msgstr "تتكون عناوين الخادم من بادئة بروتوكول وعنوان. امثله:"
+
+#: ui/MainWindow.glade:2251
+msgid "Available Protocols"
+msgstr "البروتوكولات المتاحة"
+
+#: ui/MainWindow.glade:2267
+msgid "Prefix"
+msgstr "بادئه"
+
+#: ui/MainWindow.glade:2283
+msgid "AppleTalk"
+msgstr "AppleTalk"
+
+#: ui/MainWindow.glade:2295
+msgid "afp://"
+msgstr "afp://"
+
+#: ui/MainWindow.glade:2307
+msgid "File Transfer Protocol"
+msgstr "File Transfer Protocol"
+
+#: ui/MainWindow.glade:2319
+msgid "ftp:// or ftps://"
+msgstr "ftp:// أو ftps://"
+
+#: ui/MainWindow.glade:2331
+msgid "Network File System"
+msgstr "Network File System"
+
+#: ui/MainWindow.glade:2343
+msgid "Samba"
+msgstr "Samba"
+
+#: ui/MainWindow.glade:2355
+msgid "SSH File Transfer Protocol"
+msgstr "SSH File Transfer Protocol"
+
+#: ui/MainWindow.glade:2367
+msgid "WebDAV"
+msgstr "WebDAV"
+
+#: ui/MainWindow.glade:2379
+msgid "nfs://"
+msgstr "nfs://"
+
+#: ui/MainWindow.glade:2391
+msgid "smb://"
+msgstr "smb://"
+
+#: ui/MainWindow.glade:2403
+msgid "sftp:// or ssh://"
+msgstr "sftp:// أو ssh://"
+
+#: ui/MainWindow.glade:2415
+msgid "dav:// or davs://"
+msgstr "dav:// أو davs://"
+
+#: ui/MainWindow.glade:2600
+msgid "Home"
+msgstr "وطن"
+
+#: ui/MainWindow.glade:2721
+msgid "Root"
+msgstr "جذر"
+
+#: ui/MainWindow.glade:2794 src/MainWindow.py:984
+msgid "is free of"
+msgstr "خال من"
+
+#: ui/MainWindow.glade:2910
+msgid "Hard Drives"
+msgstr "محركات الأقراص الصلبة"
+
+#: ui/MainWindow.glade:2991
+msgid "Removable Drives"
+msgstr "محركات الأقراص القابلة للإزالة"
+
+#: ui/MainWindow.glade:3100
+msgid "Hide places section"
+msgstr "قسم إخفاء الأماكن"
+
+#: ui/MainWindow.glade:3140
+msgid "Close app when Main directories are opened"
+msgstr "أغلق التطبيق عند فتح الدلائل الرئيسية"
+
+#: ui/MainWindow.glade:3180
+msgid "Close app when Hard Drives are opened"
+msgstr "أغلق التطبيق عند فتح محركات الأقراص الثابتة"
+
+#: ui/MainWindow.glade:3220
+msgid "Close app when Removable Drives are opened"
+msgstr "أغلق التطبيق عند فتح محركات الأقراص القابلة للإزالة"
+
+#: ui/MainWindow.glade:3260
+msgid "Auto refresh disks (refresh time: 1.5 seconds)"
+msgstr "التحديث التلقائي للأقراص (وقت التحديث: 1.5 ثانية)"
+
+#: ui/MainWindow.glade:3300
+msgid "Remember window size"
+msgstr "تذكر حجم النافذة"
+
+#: ui/MainWindow.glade:3340
+msgid "Use dark theme"
+msgstr "استخدام \"المظهر الداكن\""
+
+#: ui/MainWindow.glade:3409
+msgid "Restore Defaults"
+msgstr "استعادة الإعدادات الافتراضية"
+
+#: ui/MainWindow.glade:3454 src/MainWindow.py:2333 src/MainWindow.py:2351
+msgid "Home Page"
+msgstr "صفحة رئيسية"
+
+#: ui/MainWindow.glade:3569
+msgid "My Computer"
+msgstr "جهاز الكمبيوتر"
+
+#: ui/MainWindow.glade:3577
+msgid "Refresh"
+msgstr "تحديث"
+
+#: src/MainWindow.py:227
+msgid "Mauna My Computer"
+msgstr "ماونا جهاز الكمبيوتر الخاص بي"
+
+#: src/MainWindow.py:313
+msgid "Unknown (/etc/os-release syntax error)"
+msgstr "غير معروف (خطأ في بناء جملة etc/os-release)"
+
+#: src/MainWindow.py:322
+msgid "Unknown (/etc/os-release file not exists)"
+msgstr "غير معروف (etc/os-release/ الأرشيف غير موجود)"
+
+#: src/MainWindow.py:350
+msgid "About"
+msgstr "عن"
+
+#: src/MainWindow.py:352
+msgid "About System"
+msgstr "عن النظام"
+
+#: src/MainWindow.py:498
+msgid "Places"
+msgstr "اماكن"
+
+#: src/MainWindow.py:515
+msgid "Trash is empty"
+msgstr "سلة المهملات فارغة"
+
+#: src/MainWindow.py:517
+msgid "Trash contains 1 file"
+msgstr "سلة المهملات تحتوي على 1 ملف"
+
+#: src/MainWindow.py:519
+#, python-format
+msgid "Trash contains %s files"
+msgstr "تحتوي سلة المهملات على ملفات %s"
+
+#: src/MainWindow.py:521 src/MainWindow.py:531
+msgid "Trash"
+msgstr "مُخَلَّفَات"
+
+#: src/MainWindow.py:527
+msgid "Computer"
+msgstr "حاسوب"
+
+#: src/MainWindow.py:528
+msgid "Browse the computer"
+msgstr "تصفح الكمبيوتر"
+
+#: src/MainWindow.py:529
+msgid "Recent"
+msgstr "حديث"
+
+#: src/MainWindow.py:530
+msgid "Recent files"
+msgstr "الملفات الأخيرة"
+
+#: src/MainWindow.py:662
+msgid "Add new"
+msgstr "إضافة جديد"
+
+#: src/MainWindow.py:1071
+msgid "Disk is available, click to mount."
+msgstr "القرص متاح ، انقر للتحميل."
+
+#: src/MainWindow.py:1098
+msgid "Mount"
+msgstr "تجميع"
+
+#: src/MainWindow.py:1115
+msgid "Unmount"
+msgstr "الغاء تحميل"
+
+#: src/MainWindow.py:1143
+msgid "Eject"
+msgstr "اخراج"
+
+#: src/MainWindow.py:1168
+msgid "Add Bookmark"
+msgstr "إضافة إشارة مرجعية"
+
+#: src/MainWindow.py:1179
+msgid "Remove Bookmark"
+msgstr "إزالة الإشارة المرجعية"
+
+#: src/MainWindow.py:1216
+msgid "Information"
+msgstr "معلومات"
+
+#: src/MainWindow.py:1617 src/MainWindow.py:1668
+msgid "Please wait"
+msgstr "الرجاء الانتظار"
+
+#: src/MainWindow.py:1620
+msgid "Network device is unmounting."
+msgstr "جهاز الشبكة غير مثبت."
+
+#: src/MainWindow.py:1627
+msgid "Disk is unmounting."
+msgstr "القرص غير مثبت."
+
+#: src/MainWindow.py:1631 src/MainWindow.py:1671
+msgid "USB disk is unmounting."
+msgstr "قرص USB غير مثبت."
+
+#: src/MainWindow.py:1633 src/MainWindow.py:1673
+msgid "Card drive is unmounting."
+msgstr "محرك بطاقة هو إلغاء تحميل."
+
+#: src/MainWindow.py:1635 src/MainWindow.py:1675
+msgid "Optical disk is unmounting."
+msgstr "القرص الضوئي غير مثبت."
+
+#: src/MainWindow.py:1638 src/MainWindow.py:1678
+msgid "Optical drive is unmounting."
+msgstr "محرك الأقراص الضوئية غير مثبت."
+
+#: src/MainWindow.py:1640 src/MainWindow.py:1680
+msgid "Phone is unmounting."
+msgstr "الهاتف غير مثبت."
+
+#: src/MainWindow.py:1694 src/MainWindow.py:2572
+msgid "Device ejected."
+msgstr "تم إخراج الجهاز."
+
+#: src/MainWindow.py:1808
+msgid "Format"
+msgstr "تنسيق"
+
+#: src/MainWindow.py:1816
+msgid "Mount on Startup"
+msgstr "اركب في البداية"
+
+#: src/MainWindow.py:2105
+msgid "Error"
+msgstr "خطأ"
+
+#: src/MainWindow.py:2491
+msgid "Unmounting process is done"
+msgstr "تتم عملية فك التحميل"
+
+#: src/MainWindow.py:2495
+msgid "You can eject the network device."
+msgstr "يمكنك إخراج جهاز الشبكة."
+
+#: src/MainWindow.py:2500
+msgid "You can eject the disk."
+msgstr "يمكنك إخراج القرص."
+
+#: src/MainWindow.py:2504
+msgid "You can eject the USB disk."
+msgstr "يمكنك إخراج قرص USB."
+
+#: src/MainWindow.py:2506
+msgid "You can eject the card drive."
+msgstr "يمكنك إخراج محرك البطاقة."
+
+#: src/MainWindow.py:2508
+msgid "You can eject the optical disk."
+msgstr "يمكنك إخراج القرص الضوئي."
+
+#: src/MainWindow.py:2511
+msgid "You can eject the optical drive."
+msgstr "يمكنك إخراج محرك الأقراص الضوئية."
+
+#: src/MainWindow.py:2513
+msgid "You can eject the phone."
+msgstr "يمكنك إخراج الهاتف."

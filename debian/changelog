@@ -1,0 +1,91 @@
+mauna-mycomputer (1.0.0) mauna; urgency=medium
+
+  * New upstream release for Mauna Linux
+
+ -- Mauna Linux <dev@maunalinux.top>  Wed, 16 Aug 2023 16:49:47 -0300
+
+pardus-mycomputer (0.2.0) unstable; urgency=medium
+
+  * Add unmount option to hard drives too
+  * Add refresh button
+  * Add copy desktop file to user's desktop on first run
+  * Add settings page and close app switch controls
+  * Add auto refresh prefs to settings page
+  * Add UserSettings.py to setup
+  * Update pot file
+  * Update Turkish translations
+  * Add control for autorefresh glib id
+  * Fix redundant widget warning
+  * Add refresh tooltip and translations
+  * Add +x to pardus-mycomputer-add-to-desktop
+
+ -- Fatih Altun <fatih.altun@pardus.org.tr>  Fri, 04 Nov 2022 22:22:57 +0300
+
+pardus-mycomputer (0.1.1) unstable; urgency=medium
+
+  * Add screenshots
+  * Update README
+  * Update README
+  * Fix show home used size
+  * Add get version from __version__
+  * Update about pardus icon
+
+ -- Fatih Altun <fatih.altun@pardus.org.tr>  Wed, 26 Oct 2022 16:27:01 +0300
+
+pardus-mycomputer (0.1.0) unstable; urgency=medium
+
+  [ Emin Fedar ]
+  * Initial commit
+  * Initialize project
+  * [Added] Home & Root directories [Improved] General UI & Code
+  * [Added] Mount on Startup functionality [Added] Details Page
+  * [Added] get_filesystem_of_partition()
+  * [Added] updateRemovableDevicesList(), removable devices now updated when new device connected or disconnected
+  * little quote bug
+  * Added Pardus-usb-formatter support.
+  * [Added] Translations [Updated] .desktop file.
+  * [Update] setup.py & .desktop file
+  * [Added] Gio.ApplicationFlags.NON_UNIQUE
+  * [Fixed] Bug fixes
+
+  [ Fatih Altun ]
+  * Update .gitignore
+  * Fix and major update ui, backend
+  * Disable asking mount on app startup
+  * Update translations structure
+  * Update app icon
+  * Add info text for mountable disks
+  * Add unmount with sync
+  * Update .gitignore
+  * Add MainWindow.py to po/files
+  * Add pot file
+  * Update Architecture as all
+  * Add +x to debian/rules
+  * Fix translatable labels and unit sizes
+  * Add spinner to unmount stack
+  * Fix untranslatable label
+  * Use Gio unmount and Update some messages
+  * Update pot file
+  * Update Turkish translations
+  * Add Unmount.py to setup.py
+  * Fix Turkish translation typo
+  * Add popdown action to format button
+  * Add autostart files for add launcher to desktop
+  * Add postinst script for add launcher to current user desktop
+  * Rm postinst due to gio not working as root
+  * Fix autostart desktop exec path
+  * Fix add-to-desktop script
+  * Add menu button with popover
+  * Add css
+  * Rm gtk frames and Update ui
+  * Add action to menu buttons
+  * Update ui icons and translatable labels
+  * Update pot file
+  * Update Turkish translations
+  * Update ui pardus icon
+  * Add missing gir1.2-glib-2.0 depend
+  * Add 0.9 usage control for root section
+  * Add progressbar 0.9 usage control for other volumes too
+  * Update maintainer, web
+
+ -- Fatih Altun <fatih.altun@pardus.org.tr>  Fri, 21 Oct 2022 16:18:41 +0300

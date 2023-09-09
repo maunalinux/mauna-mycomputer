@@ -1,0 +1,478 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-01 16:27-0300\n"
+"PO-Revision-Date: 2023-02-04 17:23-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: ui/MainWindow.glade:14
+msgid "About Mauna My Computer"
+msgstr "मौना माई कंप्यूटर के बारे में"
+
+#: ui/MainWindow.glade:20
+msgid "UI for information and management of disks on your computer."
+msgstr "आपके कंप्यूटर पर डिस्क की जानकारी और प्रबंधन के लिए UI."
+
+#: ui/MainWindow.glade:22
+msgid "Website"
+msgstr "वेबसाइट"
+
+#: ui/MainWindow.glade:136 src/MainWindow.py:2314 src/MainWindow.py:2322
+#: src/MainWindow.py:2355
+msgid "App Settings"
+msgstr "अनुप्रयोग सेटिंग्स"
+
+#: ui/MainWindow.glade:192 src/MainWindow.py:2338 src/MainWindow.py:2347
+msgid "Control Panel"
+msgstr "नियंत्रण कक्ष"
+
+#: ui/MainWindow.glade:248 src/MainWindow.py:328
+msgid "About Mauna"
+msgstr "मौना के बारे में"
+
+#: ui/MainWindow.glade:304
+msgid "About App"
+msgstr "आवेदन के बारे में"
+
+#: ui/MainWindow.glade:347
+msgid "Folder :"
+msgstr "फ़ोल्डर :"
+
+#: ui/MainWindow.glade:364
+msgid "Select Folder"
+msgstr "फोल्डर का चयन करें"
+
+#: ui/MainWindow.glade:389 ui/MainWindow.glade:808
+msgid "Name :"
+msgstr "नाम :"
+
+#: ui/MainWindow.glade:428 ui/MainWindow.glade:847
+msgid "Icon :"
+msgstr "चिह्न :"
+
+#: ui/MainWindow.glade:480 ui/MainWindow.glade:899
+msgid "Preview :"
+msgstr "पूर्व दर्शन :"
+
+#: ui/MainWindow.glade:572
+msgid "Add"
+msgstr "जोड़ना"
+
+#: ui/MainWindow.glade:709
+msgid "Remove Shortcut"
+msgstr "शॉर्टकट हटाएं"
+
+#: ui/MainWindow.glade:765
+msgid "Edit Shortcut"
+msgstr "शॉर्टकट संपादित करें"
+
+#: ui/MainWindow.glade:991
+msgid "Update"
+msgstr "अद्यतन"
+
+#. Translators: Server as any successfully connected network address
+#: ui/MainWindow.glade:1045
+msgid "No recent servers found"
+msgstr "हाल का कोई सर्वर नहीं मिला"
+
+#: ui/MainWindow.glade:1072
+msgid "Recent Servers"
+msgstr "हाल के सर्वर"
+
+#: ui/MainWindow.glade:1178
+msgid "Device Model"
+msgstr "डिवाइस का मॉडल"
+
+#: ui/MainWindow.glade:1205
+msgid "Device Path"
+msgstr "डिवाइस पथ"
+
+#: ui/MainWindow.glade:1221
+msgid "Mountpoint"
+msgstr "माउंट पॉइंट"
+
+#: ui/MainWindow.glade:1237
+msgid "Filesystem"
+msgstr "फाइल सिस्टम"
+
+#: ui/MainWindow.glade:1264
+msgid "Used"
+msgstr "इस्तेमाल किया गया"
+
+#: ui/MainWindow.glade:1280
+msgid "Free"
+msgstr "मुक्त"
+
+#: ui/MainWindow.glade:1296
+msgid "Total"
+msgstr "कुल"
+
+#: ui/MainWindow.glade:1634
+msgid "Ok"
+msgstr "ठीक"
+
+#: ui/MainWindow.glade:1724
+msgid "message"
+msgstr "संदेश"
+
+#: ui/MainWindow.glade:1752
+msgid "Connect As"
+msgstr "के रूप में कनेक्ट करें"
+
+#: ui/MainWindow.glade:1768
+msgid "Anonymous"
+msgstr "अनाम"
+
+#: ui/MainWindow.glade:1785
+msgid "Registered User"
+msgstr "पंजीकृत उपयोगकर्ता"
+
+#: ui/MainWindow.glade:1831
+msgid "Username:"
+msgstr "उपयोगकर्ता नाम:"
+
+#: ui/MainWindow.glade:1870
+msgid "Domain:"
+msgstr "कार्यक्षेत्र:"
+
+#: ui/MainWindow.glade:1909
+msgid "Password:"
+msgstr "पासवर्ड:"
+
+#: ui/MainWindow.glade:1957
+msgid "Forget password immediately"
+msgstr "तुरंत पासवर्ड भूल गए"
+
+#: ui/MainWindow.glade:1973
+msgid "Remember password after you logout"
+msgstr "लॉग आउट करने के बाद पासवर्ड याद रखें"
+
+#: ui/MainWindow.glade:1989
+msgid "Remember forever"
+msgstr "हमेशा के लिए याद"
+
+#: ui/MainWindow.glade:2027
+msgid "Cancel"
+msgstr "रद्द करना"
+
+#: ui/MainWindow.glade:2036 ui/MainWindow.glade:2149
+msgid "Connect"
+msgstr "जोड़ना"
+
+#: ui/MainWindow.glade:2073
+msgid "Connect to Server"
+msgstr "सर्वर से कनेक्ट करें"
+
+#: ui/MainWindow.glade:2101
+msgid "Enter server address…"
+msgstr "सर्वर पता दर्ज करें…"
+
+#: ui/MainWindow.glade:2189
+msgid "Server Addresses"
+msgstr "सर्वर पते"
+
+#: ui/MainWindow.glade:2208
+msgid "Server addresses are made up of a protocol prefix and an address. Examples:"
+msgstr "सर्वर पते एक प्रोटोकॉल उपसर्ग और एक पते से बने होते हैं। उदाहरण:"
+
+#: ui/MainWindow.glade:2251
+msgid "Available Protocols"
+msgstr "उपलब्ध प्रोटोकॉल"
+
+#: ui/MainWindow.glade:2267
+msgid "Prefix"
+msgstr "उपसर्ग"
+
+#: ui/MainWindow.glade:2283
+msgid "AppleTalk"
+msgstr "AppleTalk"
+
+#: ui/MainWindow.glade:2295
+msgid "afp://"
+msgstr "afp://"
+
+#: ui/MainWindow.glade:2307
+msgid "File Transfer Protocol"
+msgstr "File Transfer Protocol"
+
+#: ui/MainWindow.glade:2319
+msgid "ftp:// or ftps://"
+msgstr "ftp:// या ftps://"
+
+#: ui/MainWindow.glade:2331
+msgid "Network File System"
+msgstr "Network File System"
+
+#: ui/MainWindow.glade:2343
+msgid "Samba"
+msgstr "Samba"
+
+#: ui/MainWindow.glade:2355
+msgid "SSH File Transfer Protocol"
+msgstr "SSH File Transfer Protocol"
+
+#: ui/MainWindow.glade:2367
+msgid "WebDAV"
+msgstr "WebDAV"
+
+#: ui/MainWindow.glade:2379
+msgid "nfs://"
+msgstr "nfs://"
+
+#: ui/MainWindow.glade:2391
+msgid "smb://"
+msgstr "smb://"
+
+#: ui/MainWindow.glade:2403
+msgid "sftp:// or ssh://"
+msgstr "sftp:// या ssh://"
+
+#: ui/MainWindow.glade:2415
+msgid "dav:// or davs://"
+msgstr "dav:// या davs://"
+
+#: ui/MainWindow.glade:2600
+msgid "Home"
+msgstr "घर"
+
+#: ui/MainWindow.glade:2721
+msgid "Root"
+msgstr "Root"
+
+#: ui/MainWindow.glade:2794 src/MainWindow.py:984
+msgid "is free of"
+msgstr "से मुक्त है"
+
+#: ui/MainWindow.glade:2910
+msgid "Hard Drives"
+msgstr "हार्ड ड्राइव्ज़"
+
+#: ui/MainWindow.glade:2991
+msgid "Removable Drives"
+msgstr "हटाने योग्य ड्राइव"
+
+#: ui/MainWindow.glade:3100
+msgid "Hide places section"
+msgstr "स्थान अनुभाग छुपाएं"
+
+#: ui/MainWindow.glade:3140
+msgid "Close app when Main directories are opened"
+msgstr "मुख्य निर्देशिका खोले जाने पर ऐप बंद करें"
+
+#: ui/MainWindow.glade:3180
+msgid "Close app when Hard Drives are opened"
+msgstr "हार्ड ड्राइव खोले जाने पर ऐप बंद करें"
+
+#: ui/MainWindow.glade:3220
+msgid "Close app when Removable Drives are opened"
+msgstr "हटाने योग्य ड्राइव खोले जाने पर ऐप बंद करें"
+
+#: ui/MainWindow.glade:3260
+msgid "Auto refresh disks (refresh time: 1.5 seconds)"
+msgstr "ऑटो रिफ्रेश डिस्क (ताज़ा समय: 1.5 सेकंड)"
+
+#: ui/MainWindow.glade:3300
+msgid "Remember window size"
+msgstr "विंडो का आकार याद रखें"
+
+#: ui/MainWindow.glade:3340
+msgid "Use dark theme"
+msgstr "डार्क थीम का इस्तेमाल करें"
+
+#: ui/MainWindow.glade:3409
+msgid "Restore Defaults"
+msgstr "डिफॉल्ट्स का पुनःस्थापन"
+
+#: ui/MainWindow.glade:3454 src/MainWindow.py:2333 src/MainWindow.py:2351
+msgid "Home Page"
+msgstr "होम पेज"
+
+#: ui/MainWindow.glade:3569
+msgid "My Computer"
+msgstr "मेरा कंप्यूटर"
+
+#: ui/MainWindow.glade:3577
+msgid "Refresh"
+msgstr "ताज़ा करना"
+
+#: src/MainWindow.py:227
+msgid "Mauna My Computer"
+msgstr "मौना मेरा कंप्यूटर"
+
+#: src/MainWindow.py:313
+msgid "Unknown (/etc/os-release syntax error)"
+msgstr "अज्ञात (/etc/os-release सिंटैक्स त्रुटि)"
+
+#: src/MainWindow.py:322
+msgid "Unknown (/etc/os-release file not exists)"
+msgstr "अज्ञात (/etc/os-release फ़ाइल मौजूद नहीं है)"
+
+#: src/MainWindow.py:350
+msgid "About"
+msgstr "के बारे में"
+
+#: src/MainWindow.py:352
+msgid "About System"
+msgstr "सिस्टम के बारे में"
+
+#: src/MainWindow.py:498
+msgid "Places"
+msgstr "स्थान"
+
+#: src/MainWindow.py:515
+msgid "Trash is empty"
+msgstr "कचरा खाली है"
+
+#: src/MainWindow.py:517
+msgid "Trash contains 1 file"
+msgstr "ट्रैश में 1 फ़ाइल है"
+
+#: src/MainWindow.py:519
+#, python-format
+msgid "Trash contains %s files"
+msgstr "ट्रैश में %s फ़ाइलें हैं"
+
+#: src/MainWindow.py:521 src/MainWindow.py:531
+msgid "Trash"
+msgstr "कचरा"
+
+#: src/MainWindow.py:527
+msgid "Computer"
+msgstr "कंप्यूटर"
+
+#: src/MainWindow.py:528
+msgid "Browse the computer"
+msgstr "कंप्यूटर ब्राउज़ करें"
+
+#: src/MainWindow.py:529
+msgid "Recent"
+msgstr "हाल ही का"
+
+#: src/MainWindow.py:530
+msgid "Recent files"
+msgstr "हाल हीं के फाइल"
+
+#: src/MainWindow.py:662
+msgid "Add new"
+msgstr "नया जोड़ो"
+
+#: src/MainWindow.py:1071
+msgid "Disk is available, click to mount."
+msgstr "डिस्क उपलब्ध है, माउंट करने के लिए क्लिक करें।"
+
+#: src/MainWindow.py:1098
+msgid "Mount"
+msgstr "पर्वत"
+
+#: src/MainWindow.py:1115
+msgid "Unmount"
+msgstr "अनमाउंट"
+
+#: src/MainWindow.py:1143
+msgid "Eject"
+msgstr "निकालें"
+
+#: src/MainWindow.py:1168
+msgid "Add Bookmark"
+msgstr "बुकमार्क जोड़ें"
+
+#: src/MainWindow.py:1179
+msgid "Remove Bookmark"
+msgstr "बुकमार्क हटाएं"
+
+#: src/MainWindow.py:1216
+msgid "Information"
+msgstr "जानकारी"
+
+#: src/MainWindow.py:1617 src/MainWindow.py:1668
+msgid "Please wait"
+msgstr "कृपया प्रतीक्षा करें"
+
+#: src/MainWindow.py:1620
+msgid "Network device is unmounting."
+msgstr "नेटवर्क डिवाइस अनमाउंट कर रहा है।"
+
+#: src/MainWindow.py:1627
+msgid "Disk is unmounting."
+msgstr "डिस्क अनमाउंट कर रहा है।"
+
+#: src/MainWindow.py:1631 src/MainWindow.py:1671
+msgid "USB disk is unmounting."
+msgstr "USB डिस्क अनमाउंट कर रहा है।"
+
+#: src/MainWindow.py:1633 src/MainWindow.py:1673
+msgid "Card drive is unmounting."
+msgstr "कार्ड ड्राइव अनमाउंट कर रहा है।"
+
+#: src/MainWindow.py:1635 src/MainWindow.py:1675
+msgid "Optical disk is unmounting."
+msgstr "ऑप्टिकल डिस्क अनमाउंट कर रहा है।"
+
+#: src/MainWindow.py:1638 src/MainWindow.py:1678
+msgid "Optical drive is unmounting."
+msgstr "ऑप्टिकल ड्राइव अनमाउंटिंग है।"
+
+#: src/MainWindow.py:1640 src/MainWindow.py:1680
+msgid "Phone is unmounting."
+msgstr "फोन अनमाउंट हो रहा है।"
+
+#: src/MainWindow.py:1694 src/MainWindow.py:2572
+msgid "Device ejected."
+msgstr "डिवाइस निकाला गया।"
+
+#: src/MainWindow.py:1808
+msgid "Format"
+msgstr "प्रारूप"
+
+#: src/MainWindow.py:1816
+msgid "Mount on Startup"
+msgstr "स्टार्टअप पर माउंट करें"
+
+#: src/MainWindow.py:2105
+msgid "Error"
+msgstr "गलती"
+
+#: src/MainWindow.py:2491
+msgid "Unmounting process is done"
+msgstr "अनमाउंटिंग प्रक्रिया की जाती है"
+
+#: src/MainWindow.py:2495
+msgid "You can eject the network device."
+msgstr "आप नेटवर्क डिवाइस को बाहर निकाल सकते हैं।"
+
+#: src/MainWindow.py:2500
+msgid "You can eject the disk."
+msgstr "आप डिस्क को बाहर निकाल सकते हैं।"
+
+#: src/MainWindow.py:2504
+msgid "You can eject the USB disk."
+msgstr "आप USB डिस्क को बाहर निकाल सकते हैं।"
+
+#: src/MainWindow.py:2506
+msgid "You can eject the card drive."
+msgstr "आप कार्ड ड्राइव को बाहर निकाल सकते हैं।"
+
+#: src/MainWindow.py:2508
+msgid "You can eject the optical disk."
+msgstr "आप ऑप्टिकल डिस्क को बाहर निकाल सकते हैं।"
+
+#: src/MainWindow.py:2511
+msgid "You can eject the optical drive."
+msgstr "आप ऑप्टिकल ड्राइव को बाहर निकाल सकते हैं।"
+
+#: src/MainWindow.py:2513
+msgid "You can eject the phone."
+msgstr "आप फोन को बाहर निकाल सकते हैं।"

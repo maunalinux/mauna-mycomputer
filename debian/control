@@ -1,0 +1,22 @@
+Source: mauna-mycomputer
+Section: utils
+Priority: optional
+Maintainer: Mauna Linux <team@amaroklinux.org>
+Build-Depends: debhelper (>= 10), dh-python, python3-all, python3-setuptools
+Standards-Version: 4.3.0
+Homepage: https://github.com/maunalinux/mauna-mycomputer
+
+Package: mauna-mycomputer
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         python3 (>=3.5),
+         python3-gi,
+         gir1.2-glib-2.0,
+         gir1.2-gtk-3.0,
+         gir1.2-notify-0.7,
+         gir1.2-pango-1.0
+Recommends: gvfs-fuse
+Description: My Computer, shows general information about your computer.
+ My Computer, shows general information about your computer.
+
