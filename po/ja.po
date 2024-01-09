@@ -1,0 +1,478 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-31 11:24-0300\n"
+"PO-Revision-Date: 2023-12-14 18:08-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: ui/MainWindow.glade:14
+msgid "About Mauna My Computer"
+msgstr "マウナ マイ コンピューターについて"
+
+#: ui/MainWindow.glade:20
+msgid "UI for information and management of disks on your computer."
+msgstr "コンピューター上のディスクの情報と管理のための UI。"
+
+#: ui/MainWindow.glade:22
+msgid "Website"
+msgstr "Webサイト"
+
+#: ui/MainWindow.glade:136 src/MainWindow.py:2314 src/MainWindow.py:2322
+#: src/MainWindow.py:2355
+msgid "App Settings"
+msgstr "アプリの設定"
+
+#: ui/MainWindow.glade:192 src/MainWindow.py:2338 src/MainWindow.py:2347
+msgid "Control Panel"
+msgstr "コントロールパネル"
+
+#: ui/MainWindow.glade:248 src/MainWindow.py:328
+msgid "About Mauna"
+msgstr "マウナについて"
+
+#: ui/MainWindow.glade:304
+msgid "About App"
+msgstr "アプリについて"
+
+#: ui/MainWindow.glade:347
+msgid "Folder :"
+msgstr "フォルダー :"
+
+#: ui/MainWindow.glade:364
+msgid "Select Folder"
+msgstr "フォルダーを選択"
+
+#: ui/MainWindow.glade:389 ui/MainWindow.glade:808
+msgid "Name :"
+msgstr "名前 ："
+
+#: ui/MainWindow.glade:428 ui/MainWindow.glade:847
+msgid "Icon :"
+msgstr "アイコン :"
+
+#: ui/MainWindow.glade:480 ui/MainWindow.glade:899
+msgid "Preview :"
+msgstr "プレビュー:"
+
+#: ui/MainWindow.glade:572
+msgid "Add"
+msgstr "追加"
+
+#: ui/MainWindow.glade:709
+msgid "Remove Shortcut"
+msgstr "ショートカットの削除"
+
+#: ui/MainWindow.glade:765
+msgid "Edit Shortcut"
+msgstr "ショートカットの編集"
+
+#: ui/MainWindow.glade:991
+msgid "Update"
+msgstr "アップデート"
+
+#. Translators: Server as any successfully connected network address
+#: ui/MainWindow.glade:1045
+msgid "No recent servers found"
+msgstr "最近のサーバーが見つかりませんでした"
+
+#: ui/MainWindow.glade:1072
+msgid "Recent Servers"
+msgstr "最近のサーバー"
+
+#: ui/MainWindow.glade:1178
+msgid "Device Model"
+msgstr "デバイスモデル"
+
+#: ui/MainWindow.glade:1205
+msgid "Device Path"
+msgstr "デバイスパス"
+
+#: ui/MainWindow.glade:1221
+msgid "Mountpoint"
+msgstr "マウントポイント"
+
+#: ui/MainWindow.glade:1237
+msgid "Filesystem"
+msgstr "ファイルシステム"
+
+#: ui/MainWindow.glade:1264
+msgid "Used"
+msgstr "使用済み"
+
+#: ui/MainWindow.glade:1280
+msgid "Free"
+msgstr "無料"
+
+#: ui/MainWindow.glade:1296
+msgid "Total"
+msgstr "合計"
+
+#: ui/MainWindow.glade:1634
+msgid "Ok"
+msgstr "わかりました"
+
+#: ui/MainWindow.glade:1724
+msgid "message"
+msgstr "メッセージ"
+
+#: ui/MainWindow.glade:1752
+msgid "Connect As"
+msgstr "接続名"
+
+#: ui/MainWindow.glade:1768
+msgid "Anonymous"
+msgstr "匿名"
+
+#: ui/MainWindow.glade:1785
+msgid "Registered User"
+msgstr "登録ユーザー"
+
+#: ui/MainWindow.glade:1831
+msgid "Username:"
+msgstr "ユーザー名:"
+
+#: ui/MainWindow.glade:1870
+msgid "Domain:"
+msgstr "ドメイン："
+
+#: ui/MainWindow.glade:1909
+msgid "Password:"
+msgstr "パスワード："
+
+#: ui/MainWindow.glade:1957
+msgid "Forget password immediately"
+msgstr "パスワードをすぐに忘れた"
+
+#: ui/MainWindow.glade:1973
+msgid "Remember password after you logout"
+msgstr "ログアウト後もパスワードを記憶する"
+
+#: ui/MainWindow.glade:1989
+msgid "Remember forever"
+msgstr "永遠に覚えておいてください"
+
+#: ui/MainWindow.glade:2027
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: ui/MainWindow.glade:2036 ui/MainWindow.glade:2149
+msgid "Connect"
+msgstr "接続する"
+
+#: ui/MainWindow.glade:2073
+msgid "Connect to Server"
+msgstr "サーバーに接続する"
+
+#: ui/MainWindow.glade:2101
+msgid "Enter server address…"
+msgstr "サーバーアドレスを入力してください…"
+
+#: ui/MainWindow.glade:2189
+msgid "Server Addresses"
+msgstr "サーバーアドレス"
+
+#: ui/MainWindow.glade:2208
+msgid "Server addresses are made up of a protocol prefix and an address. Examples:"
+msgstr "サーバー アドレスは、プロトコル プレフィックスとアドレスで構成されます。 例:"
+
+#: ui/MainWindow.glade:2251
+msgid "Available Protocols"
+msgstr "利用可能なプロトコル"
+
+#: ui/MainWindow.glade:2267
+msgid "Prefix"
+msgstr "プレフィックス"
+
+#: ui/MainWindow.glade:2283
+msgid "AppleTalk"
+msgstr "AppleTalk"
+
+#: ui/MainWindow.glade:2295
+msgid "afp://"
+msgstr "afp://"
+
+#: ui/MainWindow.glade:2307
+msgid "File Transfer Protocol"
+msgstr "File Transfer Protocol"
+
+#: ui/MainWindow.glade:2319
+msgid "ftp:// or ftps://"
+msgstr "ftp:// または ftps://"
+
+#: ui/MainWindow.glade:2331
+msgid "Network File System"
+msgstr "Network File System"
+
+#: ui/MainWindow.glade:2343
+msgid "Samba"
+msgstr "Samba"
+
+#: ui/MainWindow.glade:2355
+msgid "SSH File Transfer Protocol"
+msgstr "SSH File Transfer Protocol"
+
+#: ui/MainWindow.glade:2367
+msgid "WebDAV"
+msgstr "WebDAV"
+
+#: ui/MainWindow.glade:2379
+msgid "nfs://"
+msgstr "nfs://"
+
+#: ui/MainWindow.glade:2391
+msgid "smb://"
+msgstr "smb://"
+
+#: ui/MainWindow.glade:2403
+msgid "sftp:// or ssh://"
+msgstr "sftp:// または ssh://"
+
+#: ui/MainWindow.glade:2415
+msgid "dav:// or davs://"
+msgstr "dav:// または davs://"
+
+#: ui/MainWindow.glade:2600
+msgid "Home"
+msgstr "家"
+
+#: ui/MainWindow.glade:2721
+msgid "Root"
+msgstr "根"
+
+#: ui/MainWindow.glade:2794 src/MainWindow.py:984
+msgid "is free of"
+msgstr "無料です"
+
+#: ui/MainWindow.glade:2910
+msgid "Hard Drives"
+msgstr "ハードドライブ"
+
+#: ui/MainWindow.glade:2991
+msgid "Removable Drives"
+msgstr "リムーバブルドライブ"
+
+#: ui/MainWindow.glade:3100
+msgid "Hide places section"
+msgstr "場所セクションを非表示にする"
+
+#: ui/MainWindow.glade:3140
+msgid "Close app when Main directories are opened"
+msgstr "メインディレクトリを開いたらアプリを閉じる"
+
+#: ui/MainWindow.glade:3180
+msgid "Close app when Hard Drives are opened"
+msgstr "ハードドライブが開いたらアプリを閉じる"
+
+#: ui/MainWindow.glade:3220
+msgid "Close app when Removable Drives are opened"
+msgstr "リムーバブルドライブを開いたらアプリを閉じる"
+
+#: ui/MainWindow.glade:3260
+msgid "Auto refresh disks (refresh time: 1.5 seconds)"
+msgstr "自動リフレッシュディスク (リフレッシュ時間: 1.5 秒)"
+
+#: ui/MainWindow.glade:3300
+msgid "Remember window size"
+msgstr "ウィンドウサイズを記憶する"
+
+#: ui/MainWindow.glade:3340
+msgid "Use dark theme"
+msgstr "ダークテーマを使用する"
+
+#: ui/MainWindow.glade:3409
+msgid "Restore Defaults"
+msgstr "デフォルトに戻す"
+
+#: ui/MainWindow.glade:3454 src/MainWindow.py:2333 src/MainWindow.py:2351
+msgid "Home Page"
+msgstr "ホームページ"
+
+#: ui/MainWindow.glade:3569
+msgid "My Computer"
+msgstr "ぼくのコンピュータ"
+
+#: ui/MainWindow.glade:3577
+msgid "Refresh"
+msgstr "リフレッシュ"
+
+#: src/MainWindow.py:227
+msgid "Mauna My Computer"
+msgstr "マウナ・マイ・コンピューター"
+
+#: src/MainWindow.py:313
+msgid "Unknown (/etc/os-release syntax error)"
+msgstr "不明 (/etc/os-release 構文エラー)"
+
+#: src/MainWindow.py:322
+msgid "Unknown (/etc/os-release file not exists)"
+msgstr "不明 (/etc/os-release ファイルが存在しません)"
+
+#: src/MainWindow.py:350
+msgid "About"
+msgstr "について"
+
+#: src/MainWindow.py:352
+msgid "About System"
+msgstr "システムについて"
+
+#: src/MainWindow.py:498
+msgid "Places"
+msgstr "場所"
+
+#: src/MainWindow.py:515
+msgid "Trash is empty"
+msgstr "ゴミ箱が空です"
+
+#: src/MainWindow.py:517
+msgid "Trash contains 1 file"
+msgstr "ゴミ箱には 1 つのファイルが含まれています"
+
+#: src/MainWindow.py:519
+#, python-format
+msgid "Trash contains %s files"
+msgstr "ゴミ箱には %s ファイルが含まれています"
+
+#: src/MainWindow.py:521 src/MainWindow.py:531
+msgid "Trash"
+msgstr "ごみ"
+
+#: src/MainWindow.py:527
+msgid "Computer"
+msgstr "コンピューター"
+
+#: src/MainWindow.py:528
+msgid "Browse the computer"
+msgstr "コンピューターを閲覧する"
+
+#: src/MainWindow.py:529
+msgid "Recent"
+msgstr "最近の"
+
+#: src/MainWindow.py:530
+msgid "Recent files"
+msgstr "最近使用したファイル"
+
+#: src/MainWindow.py:662
+msgid "Add new"
+msgstr "新しく追加する"
+
+#: src/MainWindow.py:1071
+msgid "Disk is available, click to mount."
+msgstr "ディスクが使用可能です。クリックしてマウントします。"
+
+#: src/MainWindow.py:1098
+msgid "Mount"
+msgstr "マウント"
+
+#: src/MainWindow.py:1115
+msgid "Unmount"
+msgstr "アンマウント"
+
+#: src/MainWindow.py:1143
+msgid "Eject"
+msgstr "イジェクト"
+
+#: src/MainWindow.py:1168
+msgid "Add Bookmark"
+msgstr "ブックマークを追加"
+
+#: src/MainWindow.py:1179
+msgid "Remove Bookmark"
+msgstr "ブックマークを削除"
+
+#: src/MainWindow.py:1216
+msgid "Information"
+msgstr "情報"
+
+#: src/MainWindow.py:1617 src/MainWindow.py:1668
+msgid "Please wait"
+msgstr "お待ちください"
+
+#: src/MainWindow.py:1620
+msgid "Network device is unmounting."
+msgstr "ネットワークデバイスがアンマウント中です。"
+
+#: src/MainWindow.py:1627
+msgid "Disk is unmounting."
+msgstr "ディスクをアンマウント中です。"
+
+#: src/MainWindow.py:1631 src/MainWindow.py:1671
+msgid "USB disk is unmounting."
+msgstr "USB ディスクをアンマウントしています。"
+
+#: src/MainWindow.py:1633 src/MainWindow.py:1673
+msgid "Card drive is unmounting."
+msgstr "カードドライブをアンマウント中です。"
+
+#: src/MainWindow.py:1635 src/MainWindow.py:1675
+msgid "Optical disk is unmounting."
+msgstr "光ディスクをアンマウント中です。"
+
+#: src/MainWindow.py:1638 src/MainWindow.py:1678
+msgid "Optical drive is unmounting."
+msgstr "光学ドライブをアンマウント中です。"
+
+#: src/MainWindow.py:1640 src/MainWindow.py:1680
+msgid "Phone is unmounting."
+msgstr "電話機はアンマウント中です。"
+
+#: src/MainWindow.py:1694 src/MainWindow.py:2572
+msgid "Device ejected."
+msgstr "デバイスがイジェクトされました。"
+
+#: src/MainWindow.py:1808
+msgid "Format"
+msgstr "フォーマット"
+
+#: src/MainWindow.py:1816
+msgid "Mount on Startup"
+msgstr "起動時にマウント"
+
+#: src/MainWindow.py:2105
+msgid "Error"
+msgstr "エラー"
+
+#: src/MainWindow.py:2491
+msgid "Unmounting process is done"
+msgstr "アンマウント処理が完了しました"
+
+#: src/MainWindow.py:2495
+msgid "You can eject the network device."
+msgstr "ネットワークデバイスを取り外すことができます。"
+
+#: src/MainWindow.py:2500
+msgid "You can eject the disk."
+msgstr "ディスクを取り出すことができます。"
+
+#: src/MainWindow.py:2504
+msgid "You can eject the USB disk."
+msgstr "USBディスクを取り出すことができます。"
+
+#: src/MainWindow.py:2506
+msgid "You can eject the card drive."
+msgstr "カードドライブを取り出すことができます。"
+
+#: src/MainWindow.py:2508
+msgid "You can eject the optical disk."
+msgstr "光ディスクを取り出すことができます。"
+
+#: src/MainWindow.py:2511
+msgid "You can eject the optical drive."
+msgstr "光学ドライブを取り出すことができます。"
+
+#: src/MainWindow.py:2513
+msgid "You can eject the phone."
+msgstr "電話機を取り出すことができます。"
