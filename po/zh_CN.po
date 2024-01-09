@@ -1,0 +1,477 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-31 11:24-0300\n"
+"PO-Revision-Date: 2023-12-14 19:09-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.1\n"
+
+#: ui/MainWindow.glade:14
+msgid "About Mauna My Computer"
+msgstr "关于莫纳我的电脑"
+
+#: ui/MainWindow.glade:20
+msgid "UI for information and management of disks on your computer."
+msgstr "用于计算机上磁盘信息和管理的 UI。"
+
+#: ui/MainWindow.glade:22
+msgid "Website"
+msgstr "网站"
+
+#: ui/MainWindow.glade:136 src/MainWindow.py:2314 src/MainWindow.py:2322
+#: src/MainWindow.py:2355
+msgid "App Settings"
+msgstr "应用程序设置"
+
+#: ui/MainWindow.glade:192 src/MainWindow.py:2338 src/MainWindow.py:2347
+msgid "Control Panel"
+msgstr "控制面板"
+
+#: ui/MainWindow.glade:248 src/MainWindow.py:328
+msgid "About Mauna"
+msgstr "关于莫纳"
+
+#: ui/MainWindow.glade:304
+msgid "About App"
+msgstr "关于应用程序"
+
+#: ui/MainWindow.glade:347
+msgid "Folder :"
+msgstr "文件夹 ："
+
+#: ui/MainWindow.glade:364
+msgid "Select Folder"
+msgstr "选择文件夹"
+
+#: ui/MainWindow.glade:389 ui/MainWindow.glade:808
+msgid "Name :"
+msgstr "姓名 ："
+
+#: ui/MainWindow.glade:428 ui/MainWindow.glade:847
+msgid "Icon :"
+msgstr "图标 ："
+
+#: ui/MainWindow.glade:480 ui/MainWindow.glade:899
+msgid "Preview :"
+msgstr "预览 ："
+
+#: ui/MainWindow.glade:572
+msgid "Add"
+msgstr "添加"
+
+#: ui/MainWindow.glade:709
+msgid "Remove Shortcut"
+msgstr "删除快捷方式"
+
+#: ui/MainWindow.glade:765
+msgid "Edit Shortcut"
+msgstr "编辑快捷方式"
+
+#: ui/MainWindow.glade:991
+msgid "Update"
+msgstr "更新"
+
+#. Translators: Server as any successfully connected network address
+#: ui/MainWindow.glade:1045
+msgid "No recent servers found"
+msgstr "找不到最近的服务器"
+
+#: ui/MainWindow.glade:1072
+msgid "Recent Servers"
+msgstr "最近的服务器"
+
+#: ui/MainWindow.glade:1178
+msgid "Device Model"
+msgstr "设备型号"
+
+#: ui/MainWindow.glade:1205
+msgid "Device Path"
+msgstr "设备路径"
+
+#: ui/MainWindow.glade:1221
+msgid "Mountpoint"
+msgstr "挂载点"
+
+#: ui/MainWindow.glade:1237
+msgid "Filesystem"
+msgstr "文件系统"
+
+#: ui/MainWindow.glade:1264
+msgid "Used"
+msgstr "用过的"
+
+#: ui/MainWindow.glade:1280
+msgid "Free"
+msgstr "自由的"
+
+#: ui/MainWindow.glade:1296
+msgid "Total"
+msgstr "全部的"
+
+#: ui/MainWindow.glade:1634
+msgid "Ok"
+msgstr "好的"
+
+#: ui/MainWindow.glade:1724
+msgid "message"
+msgstr "信息"
+
+#: ui/MainWindow.glade:1752
+msgid "Connect As"
+msgstr "连接为"
+
+#: ui/MainWindow.glade:1768
+msgid "Anonymous"
+msgstr "匿名的"
+
+#: ui/MainWindow.glade:1785
+msgid "Registered User"
+msgstr "注册用户"
+
+#: ui/MainWindow.glade:1831
+msgid "Username:"
+msgstr "用户名："
+
+#: ui/MainWindow.glade:1870
+msgid "Domain:"
+msgstr "领域："
+
+#: ui/MainWindow.glade:1909
+msgid "Password:"
+msgstr "密码："
+
+#: ui/MainWindow.glade:1957
+msgid "Forget password immediately"
+msgstr "立即忘记密码"
+
+#: ui/MainWindow.glade:1973
+msgid "Remember password after you logout"
+msgstr "退出后记住密码"
+
+#: ui/MainWindow.glade:1989
+msgid "Remember forever"
+msgstr "永远记住"
+
+#: ui/MainWindow.glade:2027
+msgid "Cancel"
+msgstr "取消"
+
+#: ui/MainWindow.glade:2036 ui/MainWindow.glade:2149
+msgid "Connect"
+msgstr "连接"
+
+#: ui/MainWindow.glade:2073
+msgid "Connect to Server"
+msgstr "连接到服务器"
+
+#: ui/MainWindow.glade:2101
+msgid "Enter server address…"
+msgstr "输入服务器地址..."
+
+#: ui/MainWindow.glade:2189
+msgid "Server Addresses"
+msgstr "服务器地址"
+
+#: ui/MainWindow.glade:2208
+msgid "Server addresses are made up of a protocol prefix and an address. Examples:"
+msgstr "服务器地址由协议前缀和地址组成。 例子："
+
+#: ui/MainWindow.glade:2251
+msgid "Available Protocols"
+msgstr "可用协议"
+
+#: ui/MainWindow.glade:2267
+msgid "Prefix"
+msgstr "字首"
+
+#: ui/MainWindow.glade:2283
+msgid "AppleTalk"
+msgstr "AppleTalk"
+
+#: ui/MainWindow.glade:2295
+msgid "afp://"
+msgstr "afp://"
+
+#: ui/MainWindow.glade:2307
+msgid "File Transfer Protocol"
+msgstr "File Transfer Protocol"
+
+#: ui/MainWindow.glade:2319
+msgid "ftp:// or ftps://"
+msgstr "ftp:// 或 ftps://"
+
+#: ui/MainWindow.glade:2331
+msgid "Network File System"
+msgstr "Network File System"
+
+#: ui/MainWindow.glade:2343
+msgid "Samba"
+msgstr "Samba"
+
+#: ui/MainWindow.glade:2355
+msgid "SSH File Transfer Protocol"
+msgstr "SSH File Transfer Protocol"
+
+#: ui/MainWindow.glade:2367
+msgid "WebDAV"
+msgstr "WebDAV"
+
+#: ui/MainWindow.glade:2379
+msgid "nfs://"
+msgstr "nfs://"
+
+#: ui/MainWindow.glade:2391
+msgid "smb://"
+msgstr "smb://"
+
+#: ui/MainWindow.glade:2403
+msgid "sftp:// or ssh://"
+msgstr "sftp:// 或 ssh://"
+
+#: ui/MainWindow.glade:2415
+msgid "dav:// or davs://"
+msgstr "dav:// 或 davs://"
+
+#: ui/MainWindow.glade:2600
+msgid "Home"
+msgstr "家"
+
+#: ui/MainWindow.glade:2721
+msgid "Root"
+msgstr "根"
+
+#: ui/MainWindow.glade:2794 src/MainWindow.py:984
+msgid "is free of"
+msgstr "是免费的"
+
+#: ui/MainWindow.glade:2910
+msgid "Hard Drives"
+msgstr "硬盘驱动器"
+
+#: ui/MainWindow.glade:2991
+msgid "Removable Drives"
+msgstr "可移动驱动器"
+
+#: ui/MainWindow.glade:3100
+msgid "Hide places section"
+msgstr "隐藏地点部分"
+
+#: ui/MainWindow.glade:3140
+msgid "Close app when Main directories are opened"
+msgstr "主目录打开时关闭应用程序"
+
+#: ui/MainWindow.glade:3180
+msgid "Close app when Hard Drives are opened"
+msgstr "打开硬盘时关闭应用程序"
+
+#: ui/MainWindow.glade:3220
+msgid "Close app when Removable Drives are opened"
+msgstr "打开可移动驱动器时关闭应用程序"
+
+#: ui/MainWindow.glade:3260
+msgid "Auto refresh disks (refresh time: 1.5 seconds)"
+msgstr "自动刷新磁盘（刷新时间：1.5秒）"
+
+#: ui/MainWindow.glade:3300
+msgid "Remember window size"
+msgstr "记住窗口大小"
+
+#: ui/MainWindow.glade:3340
+msgid "Use dark theme"
+msgstr "使用深色主题"
+
+#: ui/MainWindow.glade:3409
+msgid "Restore Defaults"
+msgstr "恢复默认值"
+
+#: ui/MainWindow.glade:3454 src/MainWindow.py:2333 src/MainWindow.py:2351
+msgid "Home Page"
+msgstr "主页"
+
+#: ui/MainWindow.glade:3569
+msgid "My Computer"
+msgstr "我的电脑"
+
+#: ui/MainWindow.glade:3577
+msgid "Refresh"
+msgstr "刷新"
+
+#: src/MainWindow.py:227
+msgid "Mauna My Computer"
+msgstr "莫纳 我的电脑"
+
+#: src/MainWindow.py:313
+msgid "Unknown (/etc/os-release syntax error)"
+msgstr "未知（/etc/os-release 语法错误）"
+
+#: src/MainWindow.py:322
+msgid "Unknown (/etc/os-release file not exists)"
+msgstr "未知（/etc/os-release 文件不存在）"
+
+#: src/MainWindow.py:350
+msgid "About"
+msgstr "关于"
+
+#: src/MainWindow.py:352
+msgid "About System"
+msgstr "关于系统"
+
+#: src/MainWindow.py:498
+msgid "Places"
+msgstr "地点"
+
+#: src/MainWindow.py:515
+msgid "Trash is empty"
+msgstr "垃圾箱已空"
+
+#: src/MainWindow.py:517
+msgid "Trash contains 1 file"
+msgstr "垃圾箱包含 1 个文件"
+
+#: src/MainWindow.py:519
+#, python-format
+msgid "Trash contains %s files"
+msgstr "垃圾箱包含 %s 个文件"
+
+#: src/MainWindow.py:521 src/MainWindow.py:531
+msgid "Trash"
+msgstr "垃圾"
+
+#: src/MainWindow.py:527
+msgid "Computer"
+msgstr "电脑"
+
+#: src/MainWindow.py:528
+msgid "Browse the computer"
+msgstr "浏览电脑"
+
+#: src/MainWindow.py:529
+msgid "Recent"
+msgstr "最近的"
+
+#: src/MainWindow.py:530
+msgid "Recent files"
+msgstr "最近的文件"
+
+#: src/MainWindow.py:662
+msgid "Add new"
+msgstr "添新"
+
+#: src/MainWindow.py:1071
+msgid "Disk is available, click to mount."
+msgstr "磁盘可用，点击挂载。"
+
+#: src/MainWindow.py:1098
+msgid "Mount"
+msgstr "山"
+
+#: src/MainWindow.py:1115
+msgid "Unmount"
+msgstr "卸载"
+
+#: src/MainWindow.py:1143
+msgid "Eject"
+msgstr "喷射"
+
+#: src/MainWindow.py:1168
+msgid "Add Bookmark"
+msgstr "添加书签"
+
+#: src/MainWindow.py:1179
+msgid "Remove Bookmark"
+msgstr "删除书签"
+
+#: src/MainWindow.py:1216
+msgid "Information"
+msgstr "信息"
+
+#: src/MainWindow.py:1617 src/MainWindow.py:1668
+msgid "Please wait"
+msgstr "请稍等"
+
+#: src/MainWindow.py:1620
+msgid "Network device is unmounting."
+msgstr "网络设备正在卸载。"
+
+#: src/MainWindow.py:1627
+msgid "Disk is unmounting."
+msgstr "磁盘正在卸载。"
+
+#: src/MainWindow.py:1631 src/MainWindow.py:1671
+msgid "USB disk is unmounting."
+msgstr "USB 盘正在卸载。"
+
+#: src/MainWindow.py:1633 src/MainWindow.py:1673
+msgid "Card drive is unmounting."
+msgstr "正在卸载卡驱动器。"
+
+#: src/MainWindow.py:1635 src/MainWindow.py:1675
+msgid "Optical disk is unmounting."
+msgstr "正在卸载光盘。"
+
+#: src/MainWindow.py:1638 src/MainWindow.py:1678
+msgid "Optical drive is unmounting."
+msgstr "正在卸载光驱。"
+
+#: src/MainWindow.py:1640 src/MainWindow.py:1680
+msgid "Phone is unmounting."
+msgstr "手机正在卸载。"
+
+#: src/MainWindow.py:1694 src/MainWindow.py:2572
+msgid "Device ejected."
+msgstr "设备已弹出。"
+
+#: src/MainWindow.py:1808
+msgid "Format"
+msgstr "格式"
+
+#: src/MainWindow.py:1816
+msgid "Mount on Startup"
+msgstr "启动时挂载"
+
+#: src/MainWindow.py:2105
+msgid "Error"
+msgstr "错误"
+
+#: src/MainWindow.py:2491
+msgid "Unmounting process is done"
+msgstr "卸载过程完成"
+
+#: src/MainWindow.py:2495
+msgid "You can eject the network device."
+msgstr "您可以弹出网络设备。"
+
+#: src/MainWindow.py:2500
+msgid "You can eject the disk."
+msgstr "您可以弹出磁盘。"
+
+#: src/MainWindow.py:2504
+msgid "You can eject the USB disk."
+msgstr "您可以弹出 USB 盘。"
+
+#: src/MainWindow.py:2506
+msgid "You can eject the card drive."
+msgstr "您可以弹出卡驱动器。"
+
+#: src/MainWindow.py:2508
+msgid "You can eject the optical disk."
+msgstr "您可以弹出光盘。"
+
+#: src/MainWindow.py:2511
+msgid "You can eject the optical drive."
+msgstr "您可以弹出光驱。"
+
+#: src/MainWindow.py:2513
+msgid "You can eject the phone."
+msgstr "您可以弹出手机。"
