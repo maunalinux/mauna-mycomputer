@@ -1,0 +1,477 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-31 11:24-0300\n"
+"PO-Revision-Date: 2023-10-27 18:21-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4\n"
+
+#: ui/MainWindow.glade:14
+msgid "About Mauna My Computer"
+msgstr "על מאונה המחשב שלי"
+
+#: ui/MainWindow.glade:20
+msgid "UI for information and management of disks on your computer."
+msgstr "ממשק משתמש למידע וניהול דיסקים במחשב שלך."
+
+#: ui/MainWindow.glade:22
+msgid "Website"
+msgstr "אתר אינטרנט"
+
+#: ui/MainWindow.glade:136 src/MainWindow.py:2314 src/MainWindow.py:2322
+#: src/MainWindow.py:2355
+msgid "App Settings"
+msgstr "הגדרות אפליקציה"
+
+#: ui/MainWindow.glade:192 src/MainWindow.py:2338 src/MainWindow.py:2347
+msgid "Control Panel"
+msgstr "לוח בקרה"
+
+#: ui/MainWindow.glade:248 src/MainWindow.py:328
+msgid "About Mauna"
+msgstr "לגבי מאונה"
+
+#: ui/MainWindow.glade:304
+msgid "About App"
+msgstr "על אפליקציה"
+
+#: ui/MainWindow.glade:347
+msgid "Folder :"
+msgstr "תיקיה:"
+
+#: ui/MainWindow.glade:364
+msgid "Select Folder"
+msgstr "בחר תיקייה"
+
+#: ui/MainWindow.glade:389 ui/MainWindow.glade:808
+msgid "Name :"
+msgstr "שם :"
+
+#: ui/MainWindow.glade:428 ui/MainWindow.glade:847
+msgid "Icon :"
+msgstr "סמל :"
+
+#: ui/MainWindow.glade:480 ui/MainWindow.glade:899
+msgid "Preview :"
+msgstr "תצוגה מקדימה :"
+
+#: ui/MainWindow.glade:572
+msgid "Add"
+msgstr "לְהוֹסִיף"
+
+#: ui/MainWindow.glade:709
+msgid "Remove Shortcut"
+msgstr "הסר קיצור דרך"
+
+#: ui/MainWindow.glade:765
+msgid "Edit Shortcut"
+msgstr "ערוך קיצור דרך"
+
+#: ui/MainWindow.glade:991
+msgid "Update"
+msgstr "עדכון"
+
+#. Translators: Server as any successfully connected network address
+#: ui/MainWindow.glade:1045
+msgid "No recent servers found"
+msgstr "לא נמצאו שרתים אחרונים"
+
+#: ui/MainWindow.glade:1072
+msgid "Recent Servers"
+msgstr "שרתים אחרונים"
+
+#: ui/MainWindow.glade:1178
+msgid "Device Model"
+msgstr "דגם מכשיר"
+
+#: ui/MainWindow.glade:1205
+msgid "Device Path"
+msgstr "נתיב מכשיר"
+
+#: ui/MainWindow.glade:1221
+msgid "Mountpoint"
+msgstr "נקודת מאונט"
+
+#: ui/MainWindow.glade:1237
+msgid "Filesystem"
+msgstr "מערכת קבצים"
+
+#: ui/MainWindow.glade:1264
+msgid "Used"
+msgstr "בשימוש"
+
+#: ui/MainWindow.glade:1280
+msgid "Free"
+msgstr "חינם"
+
+#: ui/MainWindow.glade:1296
+msgid "Total"
+msgstr "סה\"כ"
+
+#: ui/MainWindow.glade:1634
+msgid "Ok"
+msgstr "בסדר"
+
+#: ui/MainWindow.glade:1724
+msgid "message"
+msgstr "הוֹדָעָה"
+
+#: ui/MainWindow.glade:1752
+msgid "Connect As"
+msgstr "התחבר כ"
+
+#: ui/MainWindow.glade:1768
+msgid "Anonymous"
+msgstr "בעילום שם"
+
+#: ui/MainWindow.glade:1785
+msgid "Registered User"
+msgstr "משתמש רשום"
+
+#: ui/MainWindow.glade:1831
+msgid "Username:"
+msgstr "שם משתמש:"
+
+#: ui/MainWindow.glade:1870
+msgid "Domain:"
+msgstr "תְחוּם:"
+
+#: ui/MainWindow.glade:1909
+msgid "Password:"
+msgstr "סיסמה:"
+
+#: ui/MainWindow.glade:1957
+msgid "Forget password immediately"
+msgstr "שכח את הסיסמה מיד"
+
+#: ui/MainWindow.glade:1973
+msgid "Remember password after you logout"
+msgstr "זכור את הסיסמה לאחר היציאה"
+
+#: ui/MainWindow.glade:1989
+msgid "Remember forever"
+msgstr "תזכור לתמיד"
+
+#: ui/MainWindow.glade:2027
+msgid "Cancel"
+msgstr "לְבַטֵל"
+
+#: ui/MainWindow.glade:2036 ui/MainWindow.glade:2149
+msgid "Connect"
+msgstr "לְחַבֵּר"
+
+#: ui/MainWindow.glade:2073
+msgid "Connect to Server"
+msgstr "התחבר לשרת"
+
+#: ui/MainWindow.glade:2101
+msgid "Enter server address…"
+msgstr "הזן כתובת שרת..."
+
+#: ui/MainWindow.glade:2189
+msgid "Server Addresses"
+msgstr "כתובות שרת"
+
+#: ui/MainWindow.glade:2208
+msgid "Server addresses are made up of a protocol prefix and an address. Examples:"
+msgstr "כתובות שרת מורכבות מקידומת פרוטוקול וכתובת. דוגמאות:"
+
+#: ui/MainWindow.glade:2251
+msgid "Available Protocols"
+msgstr "פרוטוקולים זמינים"
+
+#: ui/MainWindow.glade:2267
+msgid "Prefix"
+msgstr "קידומת"
+
+#: ui/MainWindow.glade:2283
+msgid "AppleTalk"
+msgstr "AppleTalk"
+
+#: ui/MainWindow.glade:2295
+msgid "afp://"
+msgstr "afp://"
+
+#: ui/MainWindow.glade:2307
+msgid "File Transfer Protocol"
+msgstr "File Transfer Protocol"
+
+#: ui/MainWindow.glade:2319
+msgid "ftp:// or ftps://"
+msgstr "ftp:// אוֹ ftps://"
+
+#: ui/MainWindow.glade:2331
+msgid "Network File System"
+msgstr "Network File System"
+
+#: ui/MainWindow.glade:2343
+msgid "Samba"
+msgstr "Samba"
+
+#: ui/MainWindow.glade:2355
+msgid "SSH File Transfer Protocol"
+msgstr "SSH File Transfer Protocol"
+
+#: ui/MainWindow.glade:2367
+msgid "WebDAV"
+msgstr "WebDAV"
+
+#: ui/MainWindow.glade:2379
+msgid "nfs://"
+msgstr "nfs://"
+
+#: ui/MainWindow.glade:2391
+msgid "smb://"
+msgstr "smb://"
+
+#: ui/MainWindow.glade:2403
+msgid "sftp:// or ssh://"
+msgstr "sftp:// או ssh://"
+
+#: ui/MainWindow.glade:2415
+msgid "dav:// or davs://"
+msgstr "dav:// או davs://"
+
+#: ui/MainWindow.glade:2600
+msgid "Home"
+msgstr "בית"
+
+#: ui/MainWindow.glade:2721
+msgid "Root"
+msgstr "שורש"
+
+#: ui/MainWindow.glade:2794 src/MainWindow.py:984
+msgid "is free of"
+msgstr "הוא חופשי מ"
+
+#: ui/MainWindow.glade:2910
+msgid "Hard Drives"
+msgstr "כוננים קשיחים"
+
+#: ui/MainWindow.glade:2991
+msgid "Removable Drives"
+msgstr "כוננים נשלפיםכוננים נשלפים"
+
+#: ui/MainWindow.glade:3100
+msgid "Hide places section"
+msgstr "קטע הסתר מקומות"
+
+#: ui/MainWindow.glade:3140
+msgid "Close app when Main directories are opened"
+msgstr "סגור את האפליקציה כאשר הספריות הראשיות נפתחות"
+
+#: ui/MainWindow.glade:3180
+msgid "Close app when Hard Drives are opened"
+msgstr "סגור את האפליקציה כאשר כוננים קשיחים נפתחים"
+
+#: ui/MainWindow.glade:3220
+msgid "Close app when Removable Drives are opened"
+msgstr "סגור את האפליקציה כאשר כוננים נשלפים נפתחים"
+
+#: ui/MainWindow.glade:3260
+msgid "Auto refresh disks (refresh time: 1.5 seconds)"
+msgstr "רענון אוטומטי של דיסקים (זמן רענון: 1.5 שניות)"
+
+#: ui/MainWindow.glade:3300
+msgid "Remember window size"
+msgstr "זכור את גודל החלון"
+
+#: ui/MainWindow.glade:3340
+msgid "Use dark theme"
+msgstr "השתמש בערכת נושא כהה"
+
+#: ui/MainWindow.glade:3409
+msgid "Restore Defaults"
+msgstr "לשחזר את ברירות מחדל"
+
+#: ui/MainWindow.glade:3454 src/MainWindow.py:2333 src/MainWindow.py:2351
+msgid "Home Page"
+msgstr "דף הבית"
+
+#: ui/MainWindow.glade:3569
+msgid "My Computer"
+msgstr "המחשב שלי"
+
+#: ui/MainWindow.glade:3577
+msgid "Refresh"
+msgstr "לְרַעֲנֵן"
+
+#: src/MainWindow.py:227
+msgid "Mauna My Computer"
+msgstr "מאונה המחשב שלי"
+
+#: src/MainWindow.py:313
+msgid "Unknown (/etc/os-release syntax error)"
+msgstr "לא ידוע (שגיאת תחביר /etc/os-release)"
+
+#: src/MainWindow.py:322
+msgid "Unknown (/etc/os-release file not exists)"
+msgstr "לא ידוע (קובץ/etc/os-release אינו קיים)"
+
+#: src/MainWindow.py:350
+msgid "About"
+msgstr "על אודות"
+
+#: src/MainWindow.py:352
+msgid "About System"
+msgstr "על מערכת"
+
+#: src/MainWindow.py:498
+msgid "Places"
+msgstr "מקומות"
+
+#: src/MainWindow.py:515
+msgid "Trash is empty"
+msgstr "האשפה ריקה"
+
+#: src/MainWindow.py:517
+msgid "Trash contains 1 file"
+msgstr "האשפה מכילה קובץ אחד"
+
+#: src/MainWindow.py:519
+#, python-format
+msgid "Trash contains %s files"
+msgstr "האשפה מכילה %s קבצים"
+
+#: src/MainWindow.py:521 src/MainWindow.py:531
+msgid "Trash"
+msgstr "אַשׁפָּה"
+
+#: src/MainWindow.py:527
+msgid "Computer"
+msgstr "מַחשֵׁב"
+
+#: src/MainWindow.py:528
+msgid "Browse the computer"
+msgstr "עיין במחשב"
+
+#: src/MainWindow.py:529
+msgid "Recent"
+msgstr "לאחרונה"
+
+#: src/MainWindow.py:530
+msgid "Recent files"
+msgstr "קבצים אחרונים"
+
+#: src/MainWindow.py:662
+msgid "Add new"
+msgstr "הוסף חדש"
+
+#: src/MainWindow.py:1071
+msgid "Disk is available, click to mount."
+msgstr "דיסק זמין, לחץ כדי לעלות."
+
+#: src/MainWindow.py:1098
+msgid "Mount"
+msgstr "הר"
+
+#: src/MainWindow.py:1115
+msgid "Unmount"
+msgstr "בטל את הטעינה"
+
+#: src/MainWindow.py:1143
+msgid "Eject"
+msgstr "לִפְלוֹט"
+
+#: src/MainWindow.py:1168
+msgid "Add Bookmark"
+msgstr "הוסף סימניה"
+
+#: src/MainWindow.py:1179
+msgid "Remove Bookmark"
+msgstr "הסר סימניה"
+
+#: src/MainWindow.py:1216
+msgid "Information"
+msgstr "מֵידָע"
+
+#: src/MainWindow.py:1617 src/MainWindow.py:1668
+msgid "Please wait"
+msgstr "המתן בבקשה"
+
+#: src/MainWindow.py:1620
+msgid "Network device is unmounting."
+msgstr "מכשיר הרשת מתנתק."
+
+#: src/MainWindow.py:1627
+msgid "Disk is unmounting."
+msgstr "הדיסק מתנתק."
+
+#: src/MainWindow.py:1631 src/MainWindow.py:1671
+msgid "USB disk is unmounting."
+msgstr "דיסק USB מתנתק."
+
+#: src/MainWindow.py:1633 src/MainWindow.py:1673
+msgid "Card drive is unmounting."
+msgstr "כונן הכרטיס מתנתק."
+
+#: src/MainWindow.py:1635 src/MainWindow.py:1675
+msgid "Optical disk is unmounting."
+msgstr "הדיסק האופטי מתנתק."
+
+#: src/MainWindow.py:1638 src/MainWindow.py:1678
+msgid "Optical drive is unmounting."
+msgstr "כונן אופטי מתנתק."
+
+#: src/MainWindow.py:1640 src/MainWindow.py:1680
+msgid "Phone is unmounting."
+msgstr "הטלפון מתנתק."
+
+#: src/MainWindow.py:1694 src/MainWindow.py:2572
+msgid "Device ejected."
+msgstr "המכשיר נפלט."
+
+#: src/MainWindow.py:1808
+msgid "Format"
+msgstr "פוּרמָט"
+
+#: src/MainWindow.py:1816
+msgid "Mount on Startup"
+msgstr "הר בהפעלה"
+
+#: src/MainWindow.py:2105
+msgid "Error"
+msgstr "שְׁגִיאָה"
+
+#: src/MainWindow.py:2491
+msgid "Unmounting process is done"
+msgstr "תהליך ביטול ההרכבה נעשה"
+
+#: src/MainWindow.py:2495
+msgid "You can eject the network device."
+msgstr "אתה יכול להוציא את התקן הרשת."
+
+#: src/MainWindow.py:2500
+msgid "You can eject the disk."
+msgstr "אתה יכול להוציא את הדיסק."
+
+#: src/MainWindow.py:2504
+msgid "You can eject the USB disk."
+msgstr "אתה יכול להוציא את דיסק ה-USB."
+
+#: src/MainWindow.py:2506
+msgid "You can eject the card drive."
+msgstr "אתה יכול להוציא את כונן הכרטיס."
+
+#: src/MainWindow.py:2508
+msgid "You can eject the optical disk."
+msgstr "אתה יכול להוציא את הדיסק האופטי."
+
+#: src/MainWindow.py:2511
+msgid "You can eject the optical drive."
+msgstr "אתה יכול להוציא את הכונן האופטי."
+
+#: src/MainWindow.py:2513
+msgid "You can eject the phone."
+msgstr "אתה יכול להוציא את הטלפון."
