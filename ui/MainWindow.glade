@@ -16,7 +16,7 @@
     <property name="type-hint">dialog</property>
     <property name="program-name">Mauna My Computer</property>
     <property name="version">0.1.0</property>
-    <property name="copyright">© 2023 Mauna Linux</property>
+    <property name="copyright">© 2024 Mauna Linux</property>
     <property name="comments" translatable="yes">UI for information and management of disks on your computer.</property>
     <property name="website">https://maunalinux.top</property>
     <property name="website-label" translatable="yes">Website</property>
@@ -2853,7 +2853,7 @@
                     <property name="opacity">0.50196078431372548</property>
                     <property name="margin-top">8</property>
                     <property name="margin-bottom">8</property>
-                    <property name="label">MAUNA LINUX | 2023</property>
+                    <property name="label">MAUNA LINUX | 2024</property>
                     <attributes>
                       <attribute name="size" value="10000"/>
                     </attributes>
