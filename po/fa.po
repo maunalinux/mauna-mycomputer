@@ -1,0 +1,478 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-31 11:24-0300\n"
+"PO-Revision-Date: 2024-01-21 18:26-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: ui/MainWindow.glade:14
+msgid "About Mauna My Computer"
+msgstr "درباره Mauna کامپیوتر من"
+
+#: ui/MainWindow.glade:20
+msgid "UI for information and management of disks on your computer."
+msgstr "UI برای اطلاعات و مدیریت دیسک های روی کامپیوتر شما."
+
+#: ui/MainWindow.glade:22
+msgid "Website"
+msgstr "سایت اینترنتی"
+
+#: ui/MainWindow.glade:136 src/MainWindow.py:2314 src/MainWindow.py:2322
+#: src/MainWindow.py:2355
+msgid "App Settings"
+msgstr "تنظیمات برنامه"
+
+#: ui/MainWindow.glade:192 src/MainWindow.py:2338 src/MainWindow.py:2347
+msgid "Control Panel"
+msgstr "صفحه کنترل"
+
+#: ui/MainWindow.glade:248 src/MainWindow.py:328
+msgid "About Mauna"
+msgstr "درباره مونا"
+
+#: ui/MainWindow.glade:304
+msgid "About App"
+msgstr "درباره برنامه"
+
+#: ui/MainWindow.glade:347
+msgid "Folder :"
+msgstr "پوشه :"
+
+#: ui/MainWindow.glade:364
+msgid "Select Folder"
+msgstr "پوشه را انتخاب کنید"
+
+#: ui/MainWindow.glade:389 ui/MainWindow.glade:808
+msgid "Name :"
+msgstr "نام :"
+
+#: ui/MainWindow.glade:428 ui/MainWindow.glade:847
+msgid "Icon :"
+msgstr "آیکون :"
+
+#: ui/MainWindow.glade:480 ui/MainWindow.glade:899
+msgid "Preview :"
+msgstr "پیش نمایش :"
+
+#: ui/MainWindow.glade:572
+msgid "Add"
+msgstr "اضافه کردن"
+
+#: ui/MainWindow.glade:709
+msgid "Remove Shortcut"
+msgstr "حذف میانبر"
+
+#: ui/MainWindow.glade:765
+msgid "Edit Shortcut"
+msgstr "ویرایش میانبر"
+
+#: ui/MainWindow.glade:991
+msgid "Update"
+msgstr "به روز رسانی"
+
+#. Translators: Server as any successfully connected network address
+#: ui/MainWindow.glade:1045
+msgid "No recent servers found"
+msgstr "هیچ سرور جدیدی پیدا نشد"
+
+#: ui/MainWindow.glade:1072
+msgid "Recent Servers"
+msgstr "سرورهای اخیر"
+
+#: ui/MainWindow.glade:1178
+msgid "Device Model"
+msgstr "مدل دستگاه"
+
+#: ui/MainWindow.glade:1205
+msgid "Device Path"
+msgstr "مسیر دستگاه"
+
+#: ui/MainWindow.glade:1221
+msgid "Mountpoint"
+msgstr "نقطه کوه"
+
+#: ui/MainWindow.glade:1237
+msgid "Filesystem"
+msgstr "سیستم فایل"
+
+#: ui/MainWindow.glade:1264
+msgid "Used"
+msgstr "استفاده شده"
+
+#: ui/MainWindow.glade:1280
+msgid "Free"
+msgstr "رایگان"
+
+#: ui/MainWindow.glade:1296
+msgid "Total"
+msgstr "جمع"
+
+#: ui/MainWindow.glade:1634
+msgid "Ok"
+msgstr "خوب"
+
+#: ui/MainWindow.glade:1724
+msgid "message"
+msgstr "پیام"
+
+#: ui/MainWindow.glade:1752
+msgid "Connect As"
+msgstr "اتصال به عنوان"
+
+#: ui/MainWindow.glade:1768
+msgid "Anonymous"
+msgstr "ناشناس"
+
+#: ui/MainWindow.glade:1785
+msgid "Registered User"
+msgstr "کاربر ثبت نام شده"
+
+#: ui/MainWindow.glade:1831
+msgid "Username:"
+msgstr "نام کاربری:"
+
+#: ui/MainWindow.glade:1870
+msgid "Domain:"
+msgstr "دامنه:"
+
+#: ui/MainWindow.glade:1909
+msgid "Password:"
+msgstr "کلمه عبور:"
+
+#: ui/MainWindow.glade:1957
+msgid "Forget password immediately"
+msgstr "بلافاصله رمز عبور را فراموش کرده اید"
+
+#: ui/MainWindow.glade:1973
+msgid "Remember password after you logout"
+msgstr "پس از خروج رمز عبور را به خاطر بسپارید"
+
+#: ui/MainWindow.glade:1989
+msgid "Remember forever"
+msgstr "برای همیشه به خاطر بسپار"
+
+#: ui/MainWindow.glade:2027
+msgid "Cancel"
+msgstr "لغو کنید"
+
+#: ui/MainWindow.glade:2036 ui/MainWindow.glade:2149
+msgid "Connect"
+msgstr "اتصال"
+
+#: ui/MainWindow.glade:2073
+msgid "Connect to Server"
+msgstr "به سرور متصل شوید"
+
+#: ui/MainWindow.glade:2101
+msgid "Enter server address…"
+msgstr "آدرس سرور را وارد کنید…"
+
+#: ui/MainWindow.glade:2189
+msgid "Server Addresses"
+msgstr "آدرس های سرور"
+
+#: ui/MainWindow.glade:2208
+msgid "Server addresses are made up of a protocol prefix and an address. Examples:"
+msgstr "آدرس های سرور از یک پیشوند پروتکل و یک آدرس ساخته شده اند. مثال ها:"
+
+#: ui/MainWindow.glade:2251
+msgid "Available Protocols"
+msgstr "پروتکل های موجود"
+
+#: ui/MainWindow.glade:2267
+msgid "Prefix"
+msgstr "پیشوند"
+
+#: ui/MainWindow.glade:2283
+msgid "AppleTalk"
+msgstr "AppleTalk"
+
+#: ui/MainWindow.glade:2295
+msgid "afp://"
+msgstr "afp://"
+
+#: ui/MainWindow.glade:2307
+msgid "File Transfer Protocol"
+msgstr "File Transfer Protocol"
+
+#: ui/MainWindow.glade:2319
+msgid "ftp:// or ftps://"
+msgstr "ftp:// یا ftps://"
+
+#: ui/MainWindow.glade:2331
+msgid "Network File System"
+msgstr "Network File System"
+
+#: ui/MainWindow.glade:2343
+msgid "Samba"
+msgstr "Samba"
+
+#: ui/MainWindow.glade:2355
+msgid "SSH File Transfer Protocol"
+msgstr "SSH File Transfer Protocol"
+
+#: ui/MainWindow.glade:2367
+msgid "WebDAV"
+msgstr "WebDAV"
+
+#: ui/MainWindow.glade:2379
+msgid "nfs://"
+msgstr "nfs://"
+
+#: ui/MainWindow.glade:2391
+msgid "smb://"
+msgstr "smb://"
+
+#: ui/MainWindow.glade:2403
+msgid "sftp:// or ssh://"
+msgstr "sftp:// یا ssh://"
+
+#: ui/MainWindow.glade:2415
+msgid "dav:// or davs://"
+msgstr "dav:// یا davs://"
+
+#: ui/MainWindow.glade:2600
+msgid "Home"
+msgstr "صفحه اصلی"
+
+#: ui/MainWindow.glade:2721
+msgid "Root"
+msgstr "ریشه"
+
+#: ui/MainWindow.glade:2794 src/MainWindow.py:984
+msgid "is free of"
+msgstr "رایگان است"
+
+#: ui/MainWindow.glade:2910
+msgid "Hard Drives"
+msgstr "دیسکهای سخت"
+
+#: ui/MainWindow.glade:2991
+msgid "Removable Drives"
+msgstr "درایوهای قابل جابجایی"
+
+#: ui/MainWindow.glade:3100
+msgid "Hide places section"
+msgstr "بخش مخفی کردن مکان ها"
+
+#: ui/MainWindow.glade:3140
+msgid "Close app when Main directories are opened"
+msgstr "وقتی دایرکتوری های اصلی باز می شوند، برنامه را ببندید"
+
+#: ui/MainWindow.glade:3180
+msgid "Close app when Hard Drives are opened"
+msgstr "وقتی هارد دیسک باز می شود، برنامه را ببندید"
+
+#: ui/MainWindow.glade:3220
+msgid "Close app when Removable Drives are opened"
+msgstr "وقتی درایوهای جداشدنی باز شدند، برنامه را ببندید"
+
+#: ui/MainWindow.glade:3260
+msgid "Auto refresh disks (refresh time: 1.5 seconds)"
+msgstr "به روز رسانی خودکار دیسک ها (زمان به روز رسانی: 1.5 ثانیه)"
+
+#: ui/MainWindow.glade:3300
+msgid "Remember window size"
+msgstr "اندازه پنجره را به خاطر بسپارید"
+
+#: ui/MainWindow.glade:3340
+msgid "Use dark theme"
+msgstr "از تم تیره استفاده کنید"
+
+#: ui/MainWindow.glade:3409
+msgid "Restore Defaults"
+msgstr "بازیابی پیش فرض ها"
+
+#: ui/MainWindow.glade:3454 src/MainWindow.py:2333 src/MainWindow.py:2351
+msgid "Home Page"
+msgstr "صفحه نخست"
+
+#: ui/MainWindow.glade:3569
+msgid "My Computer"
+msgstr "کامپیوتر من"
+
+#: ui/MainWindow.glade:3577
+msgid "Refresh"
+msgstr "تازه کردن"
+
+#: src/MainWindow.py:227
+msgid "Mauna My Computer"
+msgstr "Mauna کامپیوتر من"
+
+#: src/MainWindow.py:313
+msgid "Unknown (/etc/os-release syntax error)"
+msgstr "ناشناخته (/etc/os-release خطای نحوی)"
+
+#: src/MainWindow.py:322
+msgid "Unknown (/etc/os-release file not exists)"
+msgstr "ناشناخته (فایل/etc/os-release وجود ندارد)"
+
+#: src/MainWindow.py:350
+msgid "About"
+msgstr "در باره"
+
+#: src/MainWindow.py:352
+msgid "About System"
+msgstr "درباره سیستم"
+
+#: src/MainWindow.py:498
+msgid "Places"
+msgstr "مکان ها"
+
+#: src/MainWindow.py:515
+msgid "Trash is empty"
+msgstr "سطل زباله خالی است"
+
+#: src/MainWindow.py:517
+msgid "Trash contains 1 file"
+msgstr "سطل زباله حاوی 1 فایل است"
+
+#: src/MainWindow.py:519
+#, python-format
+msgid "Trash contains %s files"
+msgstr "سطل زباله حاوی %s فایل است"
+
+#: src/MainWindow.py:521 src/MainWindow.py:531
+msgid "Trash"
+msgstr "زباله ها"
+
+#: src/MainWindow.py:527
+msgid "Computer"
+msgstr "کامپیوتر"
+
+#: src/MainWindow.py:528
+msgid "Browse the computer"
+msgstr "کامپیوتر را مرور کنید"
+
+#: src/MainWindow.py:529
+msgid "Recent"
+msgstr "اخیر"
+
+#: src/MainWindow.py:530
+msgid "Recent files"
+msgstr "فایل های اخیر"
+
+#: src/MainWindow.py:662
+msgid "Add new"
+msgstr "جدید اضافه کن"
+
+#: src/MainWindow.py:1071
+msgid "Disk is available, click to mount."
+msgstr "دیسک در دسترس است، برای نصب کلیک کنید."
+
+#: src/MainWindow.py:1098
+msgid "Mount"
+msgstr "کوه"
+
+#: src/MainWindow.py:1115
+msgid "Unmount"
+msgstr "خارج کردن"
+
+#: src/MainWindow.py:1143
+msgid "Eject"
+msgstr "بیرون انداختن"
+
+#: src/MainWindow.py:1168
+msgid "Add Bookmark"
+msgstr "اضافه کردن نشانه"
+
+#: src/MainWindow.py:1179
+msgid "Remove Bookmark"
+msgstr "حذف نشانک"
+
+#: src/MainWindow.py:1216
+msgid "Information"
+msgstr "اطلاعات"
+
+#: src/MainWindow.py:1617 src/MainWindow.py:1668
+msgid "Please wait"
+msgstr "لطفا صبر کنید"
+
+#: src/MainWindow.py:1620
+msgid "Network device is unmounting."
+msgstr "دستگاه شبکه در حال جداسازی است."
+
+#: src/MainWindow.py:1627
+msgid "Disk is unmounting."
+msgstr "دیسک در حال باز کردن است."
+
+#: src/MainWindow.py:1631 src/MainWindow.py:1671
+msgid "USB disk is unmounting."
+msgstr "دیسک USB در حال جدا شدن است."
+
+#: src/MainWindow.py:1633 src/MainWindow.py:1673
+msgid "Card drive is unmounting."
+msgstr "درایو کارت در حال باز کردن است."
+
+#: src/MainWindow.py:1635 src/MainWindow.py:1675
+msgid "Optical disk is unmounting."
+msgstr "دیسک نوری در حال باز کردن است."
+
+#: src/MainWindow.py:1638 src/MainWindow.py:1678
+msgid "Optical drive is unmounting."
+msgstr "درایو نوری در حال باز کردن است."
+
+#: src/MainWindow.py:1640 src/MainWindow.py:1680
+msgid "Phone is unmounting."
+msgstr "تلفن در حال جدا شدن است."
+
+#: src/MainWindow.py:1694 src/MainWindow.py:2572
+msgid "Device ejected."
+msgstr "دستگاه خارج شد."
+
+#: src/MainWindow.py:1808
+msgid "Format"
+msgstr "قالب"
+
+#: src/MainWindow.py:1816
+msgid "Mount on Startup"
+msgstr "سوار شدن هنگام راهاندازی"
+
+#: src/MainWindow.py:2105
+msgid "Error"
+msgstr "خطا"
+
+#: src/MainWindow.py:2491
+msgid "Unmounting process is done"
+msgstr "فرآیند جداسازی انجام شده است"
+
+#: src/MainWindow.py:2495
+msgid "You can eject the network device."
+msgstr "می توانید دستگاه شبکه را خارج کنید."
+
+#: src/MainWindow.py:2500
+msgid "You can eject the disk."
+msgstr "می توانید دیسک را خارج کنید."
+
+#: src/MainWindow.py:2504
+msgid "You can eject the USB disk."
+msgstr "می توانید دیسک USB را خارج کنید."
+
+#: src/MainWindow.py:2506
+msgid "You can eject the card drive."
+msgstr "می توانید درایو کارت را خارج کنید."
+
+#: src/MainWindow.py:2508
+msgid "You can eject the optical disk."
+msgstr "می توانید دیسک نوری را خارج کنید."
+
+#: src/MainWindow.py:2511
+msgid "You can eject the optical drive."
+msgstr "می توانید درایو نوری را خارج کنید."
+
+#: src/MainWindow.py:2513
+msgid "You can eject the phone."
+msgstr "می توانید گوشی را بیرون بیاورید."
