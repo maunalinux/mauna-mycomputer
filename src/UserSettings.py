@@ -5,12 +5,15 @@ Created on Fri Oct 28 13:13:13 2022
 
 @author: fatih
 """
-import json
-import os.path
-from pathlib import Path
 import configparser
+import json
 import locale
+import os.path
+import subprocess
 from locale import gettext as _
+from pathlib import Path
+
+from gi.repository import GLib
 
 # Translation Constants:
 APPNAME = "mauna-mycomputer"
@@ -20,17 +23,21 @@ TRANSLATIONS_PATH = "/usr/share/locale"
 # Translation functions:
 locale.bindtextdomain(APPNAME, TRANSLATIONS_PATH)
 locale.textdomain(APPNAME)
+
+
 # locale.setlocale(locale.LC_ALL, SYSTEM_LANGUAGE)
 
 class UserSettings(object):
     def __init__(self):
-
-        self.user_home = Path.home()
-        self.user_config_dir = Path.joinpath(self.user_home, Path(".config/mauna-mycomputer"))
+        self.user_config_dir = Path.joinpath(Path(GLib.get_user_config_dir()), Path("mauna-mycomputer"))
+        if not Path(self.user_config_dir).exists():
+            self.user_config_dir = Path.joinpath(Path(GLib.get_user_config_dir()), Path("mauna/mauna-mycomputer"))
         self.user_config_file = Path.joinpath(self.user_config_dir, Path("settings.ini"))
         self.user_recent_servers_file = Path.joinpath(self.user_config_dir, Path("servers-recent"))
         self.user_saved_servers_file = Path.joinpath(self.user_config_dir, Path("servers-saved"))
         self.user_saved_places_file = Path.joinpath(self.user_config_dir, Path("places-saved"))
+
+        self.desktop_file = "top.mauna.mycomputer.desktop"
 
         self.config = configparser.ConfigParser(strict=False)
 
@@ -41,6 +48,7 @@ class UserSettings(object):
         self.config_autorefresh = None
         self.config_autorefresh_time = None
         self.config_hide_places = None
+        self.config_hide_desktopicon = None
 
         # window configs
         self.config_window_remember_size = None
@@ -56,6 +64,7 @@ class UserSettings(object):
         self.default_autorefresh = False
         self.default_autorefresh_time = 1.5
         self.default_hide_places = False
+        self.default_hide_desktopicon = False
 
         # window defaults
         self.default_window_remember_size = False
@@ -63,7 +72,6 @@ class UserSettings(object):
         self.default_window_width = 700
         self.default_window_height = 550
         self.default_window_use_darktheme = False
-
 
     def createDefaultConfig(self, force=False):
         self.config['MAIN'] = {
@@ -73,6 +81,7 @@ class UserSettings(object):
             'AutoRefresh': self.default_autorefresh,
             'AutoRefreshTime': self.default_autorefresh_time,
             'HidePlaces': self.default_hide_places
+            'HideDesktopIcon': self.default_hide_desktopicon
         }
 
         self.config['WINDOW'] = {
@@ -97,6 +106,7 @@ class UserSettings(object):
             self.config_autorefresh = self.config.getboolean('MAIN', 'AutoRefresh')
             self.config_autorefresh_time = self.config.getfloat('MAIN', 'AutoRefreshTime')
             self.config_hide_places = self.config.getboolean('MAIN', 'HidePlaces')
+            self.config_hide_desktopicon = self.config.getboolean('MAIN', 'HideDesktopIcon')
             self.config_window_remember_size = self.config.getboolean('WINDOW', 'RememberWindowSize')
             self.config_window_fullscreen = self.config.getboolean('WINDOW', 'FullScreen')
             self.config_window_width = self.config.getint('WINDOW', 'Width')
@@ -113,6 +123,7 @@ class UserSettings(object):
             self.config_autorefresh = self.default_autorefresh
             self.config_autorefresh_time = self.default_autorefresh_time
             self.config_hide_places = self.default_hide_places
+            self.config_hide_desktopicon = self.default_hide_desktopicon
             self.config_window_remember_size = self.default_window_remember_size
             self.config_window_fullscreen = self.default_window_fullscreen
             self.config_window_width = self.default_window_width
@@ -124,7 +135,8 @@ class UserSettings(object):
                 print("self.createDefaultConfig(force=True) : {}".format(e))
 
     def writeConfig(self, closeappmain="", closeapphdd="", closeappusb="", autorefresh="", autorefreshtime="",
-                    hideplaces="", rememberwindowsize="", fullscreen="", width="", height="", usedarktheme=""):
+                    hideplaces="", hidedesktopicon="", rememberwindowsize="", fullscreen="",
+                    width="", height="", usedarktheme=""):
         if closeappmain == "":
             closeappmain = self.config_closeapp_main
         if closeapphdd == "":
@@ -135,6 +147,8 @@ class UserSettings(object):
             autorefresh = self.config_autorefresh
         if autorefreshtime == "":
             autorefreshtime = self.config_autorefresh_time
+        if hidedesktopicon == "":
+            hidedesktopicon = self.config_hide_desktopicon
         if hideplaces == "":
             hideplaces = self.config_hide_places
         if rememberwindowsize == "":
@@ -155,6 +169,7 @@ class UserSettings(object):
             'AutoRefresh': autorefresh,
             'AutoRefreshTime': autorefreshtime,
             'HidePlaces': hideplaces
+            'HideDesktopIcon': hidedesktopicon
         }
 
         self.config['WINDOW'] = {
@@ -181,6 +196,7 @@ class UserSettings(object):
 
     def addRecentServer(self, uri, name):
         server = "{} {}".format(uri, name).strip()
+
         def add():
             with open(self.user_recent_servers_file, "r+") as sf:
                 for line in sf:
@@ -188,6 +204,7 @@ class UserSettings(object):
                         break
                 else:
                     sf.write("{}\n".format(server))
+
         if not Path.is_file(self.user_recent_servers_file):
             self.createDir(self.user_config_dir)
             self.user_recent_servers_file.touch(exist_ok=True)
@@ -215,6 +232,7 @@ class UserSettings(object):
 
     def addSavedServer(self, uri, name):
         server = "{} {}".format(uri, name).strip()
+
         def add():
             with open(self.user_saved_servers_file, "r+") as sf:
                 for line in sf:
@@ -222,6 +240,7 @@ class UserSettings(object):
                         break
                 else:
                     sf.write("{}\n".format(server))
+
         if not Path.is_file(self.user_saved_servers_file):
             self.createDir(self.user_config_dir)
             self.user_saved_servers_file.touch(exist_ok=True)
@@ -277,14 +296,16 @@ class UserSettings(object):
             samplefile.writelines(_("# example line is as below") + "\n")
             samplefile.writelines(_("# note: remove the hash to make it appear") + "\n")
             samplefile.writelines(
-                '#{"path": "'+ str(self.user_home) + '", "name": "' + _("Home") +'", "icon": "folder-symbolic"}' + "\n")
+                '#{"path": "' + GLib.get_home_dir() + '", "name": "' + _(
+                    "Home") + '", "icon": "folder-symbolic"}' + "\n")
             samplefile.flush()
             samplefile.close()
 
         return places
 
     def addSavedPlaces(self, path, name, icon):
-        place = '{"path": "' + path + '", "name": "' + name + '", "icon": "' + icon +'"}'
+        place = '{"path": "' + path + '", "name": "' + name + '", "icon": "' + icon + '"}'
+
         def add():
             with open(self.user_saved_places_file, "r+") as savep:
                 for line in savep:
@@ -299,6 +320,7 @@ class UserSettings(object):
                             pass
                 savep.writelines("{}\n".format(place))
                 return True
+
         if not Path.is_file(self.user_saved_places_file):
             self.createDir(self.user_config_dir)
             self.user_saved_places_file.touch(exist_ok=True)
@@ -329,3 +351,13 @@ class UserSettings(object):
                         place = '{"path": "' + path + '", "name": "' + name + '", "icon": "' + icon + '"}'
                         f.write("{}\n".format(place))
 
+    def set_hide_desktopicon(self, state):
+        if state:
+            subprocess.call(["/usr/share/mauna/mauna-mycomputer/autostart/mauna-mycomputer-add-to-desktop"])
+            if os.path.exists(os.path.join(GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_DESKTOP),
+                                           self.desktop_file)):
+                os.remove(os.path.join(GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_DESKTOP),
+                                       self.desktop_file))
+        else:
+            if Path.joinpath(self.user_config_dir, Path("desktop")).exists():
+                Path.joinpath(self.user_config_dir, Path("desktop")).unlink(missing_ok=True)

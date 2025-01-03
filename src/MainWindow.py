@@ -1,8 +1,11 @@
 import json
-import os, subprocess
+import os
+import subprocess
 import urllib.parse
+from pathlib import Path
 
 import gi
+
 gi.require_version("Notify", "0.7")
 gi.require_version('Gtk', '3.0')
 from gi.repository import GLib, Gio, Gtk, Notify, Gdk, Pango, GdkPixbuf
@@ -22,6 +25,8 @@ TRANSLATIONS_PATH = "/usr/share/locale"
 # Translation functions:
 locale.bindtextdomain(APPNAME, TRANSLATIONS_PATH)
 locale.textdomain(APPNAME)
+
+
 # locale.setlocale(locale.LC_ALL, SYSTEM_LANGUAGE)
 
 
@@ -256,9 +261,8 @@ class MainWindow:
 
     def add_to_desktop(self):
         # Copy app's desktop file to user's desktop path on first run
-        user_home = GLib.get_home_dir()
-        user_desktopcontrol_file = os.path.join(user_home, ".config/mauna-mycomputer/desktop")
-        if not os.path.isfile(user_desktopcontrol_file):
+        user_desktopcontrol_file = Path.joinpath(self.UserSettings.user_config_dir, Path("desktop"))
+        if not Path(user_desktopcontrol_file).exists() and not self.UserSettings.config_hide_desktopicon:
             print("{} {}".format("Desktop file copying to",
                                  GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_DESKTOP)))
             try:
@@ -271,6 +275,17 @@ class MainWindow:
                                       "/usr/share/mauna/mauna-mycomputer/autostart/mauna-mycomputer-add-to-desktop"])
                 except Exception as e:
                     print("{}".format(e))
+
+    def control_desktopicon(self):
+        if not os.path.exists(os.path.join(GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_DESKTOP),
+                                           self.UserSettings.desktop_file)):
+            if not self.UserSettings.config_hide_desktopicon:
+                self.UserSettings.writeConfig(hidedesktopicon=True)
+                self.user_settings()
+        else:
+            if self.UserSettings.config_hide_desktopicon:
+                self.UserSettings.writeConfig(hidedesktopicon=False)
+                self.user_settings()
 
     def user_settings(self):
         self.UserSettings = UserSettings()
@@ -320,7 +335,6 @@ class MainWindow:
         else:
             print("/etc/os-release file not found")
             os_name = _("Unknown (/etc/os-release file not exists)")
-
 
         if os_id == "mauna":
             self.img_os.set_from_icon_name("emblem-debian-symbolic", Gtk.IconSize.BUTTON)
@@ -490,7 +504,7 @@ class MainWindow:
 
         self.box_places.foreach(lambda child: self.box_places.remove(child))
 
-        saved_places =self.UserSettings.getSavedPlaces()
+        saved_places = self.UserSettings.getSavedPlaces()
         dirs = []
         locs = []
 
@@ -501,7 +515,6 @@ class MainWindow:
         label.set_margin_bottom(5)
         label.set_halign(Gtk.Align.START)
         self.box_places.add(label)
-
 
         try:
             trashcount = Gio.File.new_for_uri("trash:///").query_info(
@@ -652,7 +665,7 @@ class MainWindow:
         iconview.set_vexpand_set(True)
         iconview.get_style_context().add_class("mauna-mycomputer-iconview")
         iconview.enable_model_drag_dest([Gtk.TargetEntry.new('text/uri-list', 0, 0)],
-                                             Gdk.DragAction.DEFAULT | Gdk.DragAction.COPY)
+                                        Gdk.DragAction.DEFAULT | Gdk.DragAction.COPY)
         iconview.connect("drag-data-received", self.drag_data_received)
         self.box_places.add(iconview)
 
@@ -689,7 +702,6 @@ class MainWindow:
         self.popover_place_remove.set_relative_to(self.box_places)
         self.popover_place_remove.popdown()
         self.popover_place_edit.set_visible(False)
-
 
     def control_places_show(self, displaycontrol=False):
         self.box_places.set_visible(not self.UserSettings.config_hide_places)
@@ -825,7 +837,7 @@ class MainWindow:
         edit = json.loads(self.place_remove_name)
         self.entry_place_name_edit.set_text(edit["name"])
         self.entry_place_icon_edit.set_text(edit["icon"])
-        self.lbl_place_preview_edit.set_text(edit["name"] )
+        self.lbl_place_preview_edit.set_text(edit["name"])
         self.img_place_preview_edit.set_from_icon_name(edit["icon"], Gtk.IconSize.BUTTON)
 
     def on_entry_place_name_edit_changed(self, entry):
@@ -941,16 +953,16 @@ class MainWindow:
         file_info = DiskManager.get_file_info(mount_point, network=True if vl._main_type == "network" else False)
 
         if file_info is not None:
-
             self.dlg_lbl_dev.set_label(file_info["device"])
             self.dlg_lbl_mountpoint.set_label(mount_point)
 
-            self.dlg_lbl_used_gb.set_label(f"{int(file_info['usage_kb'])/1000/1000:.2f} GB (%{file_info['usage_percent']*100:.2f})")
-            self.dlg_lbl_free_gb.set_label(f"{int(file_info['free_kb'])/1000/1000:.2f} GB (%{file_info['free_percent']*100:.2f})")
-            self.dlg_lbl_total_gb.set_label(f"{int(file_info['total_kb'])/1000/1000:.2f} GB")
+            self.dlg_lbl_used_gb.set_label(
+                f"{int(file_info['usage_kb']) / 1000 / 1000:.2f} GB (%{file_info['usage_percent'] * 100:.2f})")
+            self.dlg_lbl_free_gb.set_label(
+                f"{int(file_info['free_kb']) / 1000 / 1000:.2f} GB (%{file_info['free_percent'] * 100:.2f})")
+            self.dlg_lbl_total_gb.set_label(f"{int(file_info['total_kb']) / 1000 / 1000:.2f} GB")
 
             self.dlg_lbl_filesystem_type.set_label(file_info["fstype"])
-
 
     def showVolumeSizes(self, row_volume):
         vl = row_volume._volume
@@ -963,7 +975,8 @@ class MainWindow:
         if gm != None and not isinstance(vl, str):
 
             mount_point = gm.get_root().get_path()
-            file_info = DiskManager.get_file_info(mount_point, network=True if row_volume._main_type == "network" else False)
+            file_info = DiskManager.get_file_info(mount_point,
+                                                  network=True if row_volume._main_type == "network" else False)
 
             if row_volume._main_type == "network":
                 display_name = vl.get_name()
@@ -980,9 +993,10 @@ class MainWindow:
                 # Show values on UI
                 row_volume._lbl_volume_name.set_markup(
                     f'<b>{GLib.markup_escape_text(display_name, -1)}</b>'
-                    f'<span size="small">( { GLib.markup_escape_text(mount_point, -1) } )</span>')
-                row_volume._lbl_volume_size_info.set_markup("<span size='small'><b>{:.2f} GB</b> {} {:.2f} GB</span>".format(
-                    free_kb/1000/1000, _("is free of"),total_kb/1000/1000))
+                    f'<span size="small">( {GLib.markup_escape_text(mount_point, -1)} )</span>')
+                row_volume._lbl_volume_size_info.set_markup(
+                    "<span size='small'><b>{:.2f} GB</b> {} {:.2f} GB</span>".format(
+                        free_kb / 1000 / 1000, _("is free of"), total_kb / 1000 / 1000))
                 row_volume._pb_volume_size.set_fraction(file_info["usage_percent"])
 
                 # if volume usage >= 0.9 then add destructive color
@@ -1005,8 +1019,7 @@ class MainWindow:
 
             # name = vl if isinstance(vl, str) else vl.get_name()
             # print(f"can't mount the volume: {name}")
-
-    
+ 
     def tryMountVolume(self, row_volume):
         vl = row_volume._volume
         if not vl.can_mount() and vl.get_mount() == None:
@@ -1021,12 +1034,12 @@ class MainWindow:
                     return True
                 except GLib.Error:
                     return False
-            
+
             vl.mount(Gio.MountMountFlags.NONE, self.mount_operation, None, on_mounted, row_volume)
         else:
             self.showVolumeSizes(row_volume)
             return True
-    
+
     def addVolumeRow(self, vl, listbox, is_removable, is_ejectable, main_type="", type="", mount_uri="", mount_name=""):
         # Prepare UI Containers:
         box_volume = Gtk.Box.new(Gtk.Orientation.HORIZONTAL, 5)
@@ -1053,7 +1066,6 @@ class MainWindow:
             elif main_type == "saved":
                 img_volume = Gtk.Image.new_from_icon_name("user-bookmarks", Gtk.IconSize.DIALOG)
 
-
         box_volume_info = Gtk.Box.new(Gtk.Orientation.VERTICAL, 3)
 
         # Volume infos
@@ -1069,7 +1081,7 @@ class MainWindow:
 
         lbl_volume_name = Gtk.Label.new()
         lbl_volume_name.set_markup("<b>{}</b><small> ( {} )</small>".format(
-            GLib.markup_escape_text(name, -1),_("Disk is available, click to mount.")))
+            GLib.markup_escape_text(name, -1), _("Disk is available, click to mount.")))
         lbl_volume_name.set_halign(Gtk.Align.START)
         lbl_volume_name.set_ellipsize(Pango.EllipsizeMode.MIDDLE)
 
@@ -1085,15 +1097,14 @@ class MainWindow:
         # Add widgets to box:
         box_volume_info.add(lbl_volume_name)
         box_volume_info.add(pb_volume_size)
-        box_volume_info.add(lbl_volume_size_info)        
+        box_volume_info.add(lbl_volume_size_info)
 
         # Add Disk settings button
-
 
         stack_mount = Gtk.Stack.new()
 
         btn_mount = Gtk.Button.new()
-        btn_mount.set_image(Gtk.Image.new_from_icon_name("media-playback-start-symbolic", Gtk.IconSize.BUTTON  ))
+        btn_mount.set_image(Gtk.Image.new_from_icon_name("media-playback-start-symbolic", Gtk.IconSize.BUTTON))
         btn_mount.set_relief(Gtk.ReliefStyle.NONE)
         btn_mount.set_valign(Gtk.Align.CENTER)
         btn_mount.set_tooltip_text(_("Mount"))
@@ -1110,7 +1121,7 @@ class MainWindow:
         btn_mount.connect("clicked", self.on_btn_mount_clicked)
 
         btn_unmount = Gtk.Button.new()
-        btn_unmount.set_image(Gtk.Image.new_from_icon_name("media-playback-stop-symbolic", Gtk.IconSize.BUTTON  ))
+        btn_unmount.set_image(Gtk.Image.new_from_icon_name("media-playback-stop-symbolic", Gtk.IconSize.BUTTON))
         btn_unmount.set_relief(Gtk.ReliefStyle.NONE)
         btn_unmount.set_valign(Gtk.Align.CENTER)
         btn_unmount.set_tooltip_text(_("Unmount"))
@@ -1135,10 +1146,8 @@ class MainWindow:
         stack_mount.get_child_by_name("mount").show()
         stack_mount.get_child_by_name("unmount").show()
 
-
-
         btn_eject = Gtk.Button.new()
-        btn_eject.set_image(Gtk.Image.new_from_icon_name("media-eject-symbolic", Gtk.IconSize.BUTTON  ))
+        btn_eject.set_image(Gtk.Image.new_from_icon_name("media-eject-symbolic", Gtk.IconSize.BUTTON))
         btn_eject.set_relief(Gtk.ReliefStyle.NONE)
         btn_eject.set_valign(Gtk.Align.CENTER)
         btn_eject.set_tooltip_text(_("Eject"))
@@ -1158,12 +1167,10 @@ class MainWindow:
             btn_eject.set_sensitive(True)
         btn_eject.connect("clicked", self.on_btn_eject_clicked)
 
-
-
         stack_bookmark = Gtk.Stack.new()
 
         btn_bookmark_add = Gtk.Button.new()
-        btn_bookmark_add.set_image(Gtk.Image.new_from_icon_name("bookmark-new-symbolic", Gtk.IconSize.BUTTON  ))
+        btn_bookmark_add.set_image(Gtk.Image.new_from_icon_name("bookmark-new-symbolic", Gtk.IconSize.BUTTON))
         btn_bookmark_add.set_relief(Gtk.ReliefStyle.NONE)
         btn_bookmark_add.set_valign(Gtk.Align.CENTER)
         btn_bookmark_add.set_tooltip_text(_("Add Bookmark"))
@@ -1174,7 +1181,7 @@ class MainWindow:
         btn_bookmark_add.connect("clicked", self.on_btn_save_othermount_clicked)
 
         btn_bookmark_delete = Gtk.Button.new()
-        btn_bookmark_delete.set_image(Gtk.Image.new_from_icon_name("edit-delete-symbolic", Gtk.IconSize.BUTTON  ))
+        btn_bookmark_delete.set_image(Gtk.Image.new_from_icon_name("edit-delete-symbolic", Gtk.IconSize.BUTTON))
         btn_bookmark_delete.set_relief(Gtk.ReliefStyle.NONE)
         btn_bookmark_delete.set_valign(Gtk.Align.CENTER)
         btn_bookmark_delete.set_tooltip_text(_("Remove Bookmark"))
@@ -1209,9 +1216,8 @@ class MainWindow:
             if not vl.get_mount():
                 show_info = False
 
-
         btn_info = Gtk.Button.new()
-        btn_info.set_image(Gtk.Image.new_from_icon_name("dialog-information-symbolic", Gtk.IconSize.BUTTON  ))
+        btn_info.set_image(Gtk.Image.new_from_icon_name("dialog-information-symbolic", Gtk.IconSize.BUTTON))
         btn_info.set_relief(Gtk.ReliefStyle.NONE)
         btn_info.set_valign(Gtk.Align.CENTER)
         btn_info.set_tooltip_text(_("Information"))
@@ -1227,9 +1233,6 @@ class MainWindow:
         btn_info._mount_name = mount_name
         btn_info.connect("clicked", self.on_btn_volume_info_clicked)
 
-
-
-
         box_volume.add(img_volume)
         box_volume.pack_start(box_volume_info, True, True, 0)
         box_volume.pack_start(stack_mount, False, True, 0)
@@ -1241,7 +1244,6 @@ class MainWindow:
             box_volume.pack_start(btn_info, False, True, 0)
         # box_volume.pack_end(btn_volume_settings, False, True, 0)
         box_volume.props.margin = 8
-
 
         # Add to listbox
         listbox.prepend(box_volume)
@@ -1269,13 +1271,13 @@ class MainWindow:
         # Home:
         home_info = DiskManager.get_file_info(GLib.get_home_dir())
         self.lbl_home_path.set_markup("<small>( {} )</small>".format(GLib.get_home_dir()))
-        self.lbl_home_size.set_label(f"{int(home_info['usage_kb'])/1000/1000:.2f} GB")
+        self.lbl_home_size.set_label(f"{int(home_info['usage_kb']) / 1000 / 1000:.2f} GB")
 
         # Root:
         root_info = DiskManager.get_file_info("/")
-        self.lbl_root_free.set_label(f"{int(root_info['free_kb'])/1000/1000:.2f} GB")
-        self.lbl_root_total.set_label(f"{int(root_info['total_kb'])/1000/1000:.2f} GB")
-        self.pb_root_usage.set_fraction( root_info["usage_percent"] )
+        self.lbl_root_free.set_label(f"{int(root_info['free_kb']) / 1000 / 1000:.2f} GB")
+        self.lbl_root_total.set_label(f"{int(root_info['total_kb']) / 1000 / 1000:.2f} GB")
+        self.pb_root_usage.set_fraction(root_info["usage_percent"])
 
         # if root usage >= 0.9 then add destructive color
         try:
@@ -1289,7 +1291,7 @@ class MainWindow:
 
         # RemovableDevices
         self.addRemovableDevicesToList()
-        
+
     def addHardDisksToList(self):
         self.box_drives.foreach(lambda child: self.box_drives.remove(child))
 
@@ -1313,11 +1315,11 @@ class MainWindow:
                         ejectable = False
                     self.addVolumeRow(vl, listbox, False, ejectable)
 
-                #self.box_drives.add(lbl_drive_name)
+                # self.box_drives.add(lbl_drive_name)
                 self.box_drives.add(listbox)
 
         self.box_drives.show_all()
-        
+
     def addRemovableDevicesToList(self):
         self.box_removables.foreach(lambda child: self.box_removables.remove(child))
 
@@ -1348,9 +1350,8 @@ class MainWindow:
                             self.mount_paths.append(vl.get_mount().get_root().get_path())
                     except Exception as e:
                         print("mount_paths append error: {}".format(e))
-                
-                self.box_removables.add(listbox)
 
+                self.box_removables.add(listbox)
 
         # disk images, phones
         drives = []
@@ -1379,7 +1380,8 @@ class MainWindow:
                     ejectable = False
 
                 # Add Volumes to the ListBox:
-                self.addVolumeRow(volume, listbox, True, ejectable, main_type="volume", type=self.control_volume_type(volume))
+                self.addVolumeRow(volume, listbox, True, ejectable, main_type="volume",
+                                  type=self.control_volume_type(volume))
 
                 try:
                     if volume.get_mount():
@@ -1388,7 +1390,6 @@ class MainWindow:
                     print("mount_paths append error: {}".format(e))
 
                 self.box_removables.add(listbox)
-
 
         # smb, sftp vs..
         connected_mounts = []
@@ -1429,7 +1430,6 @@ class MainWindow:
         for saved in saveds:
 
             if not any(d["uri"] == saved["uri"] for d in self.net_mounts):
-
                 # Volume ListBox
                 listbox = Gtk.ListBox.new()
                 listbox.set_selection_mode(Gtk.SelectionMode.NONE)
@@ -1437,15 +1437,15 @@ class MainWindow:
                 listbox.get_style_context().add_class("mauna-mycomputer-listbox")
 
                 # Add Volumes to the ListBox:
-                self.addVolumeRow(saved["uri"], listbox, True, False, main_type="saved", mount_uri=saved["uri"], mount_name=saved["name"])
+                self.addVolumeRow(saved["uri"], listbox, True, False, main_type="saved", mount_uri=saved["uri"],
+                                  mount_name=saved["name"])
 
                 # self.box_removables.add(lbl_drive_name)
                 self.box_removables.add(listbox)
             # else:
             #     print("saved {} mount uri already in net_mounts".format(saved["uri"]))
-        
-        self.box_removables.show_all()
 
+        self.box_removables.show_all()
 
     def control_drive_type(self, volume):
 
@@ -1469,7 +1469,7 @@ class MainWindow:
             if "media-removable" in iconstring or "drive-removable" in iconstring:
                 usbstick = True
         except Exception as e:
-                print("Error in get_symbolic_icon(): {}".format(e))
+            print("Error in get_symbolic_icon(): {}".format(e))
 
         return usbstick
 
@@ -1485,7 +1485,7 @@ class MainWindow:
             if "flash" in volume.get_icon().to_string():
                 card = True
         except Exception as e:
-                print("Error in get_icon(): {}".format(e))
+            print("Error in get_icon(): {}".format(e))
 
         return card
 
@@ -1501,7 +1501,7 @@ class MainWindow:
             if "optical" in volume.get_icon().to_string():
                 optical = True
         except Exception as e:
-                print("Error in get_symbolic_icon(): {}".format(e))
+            print("Error in get_symbolic_icon(): {}".format(e))
 
         return optical
 
@@ -1523,7 +1523,7 @@ class MainWindow:
             if "phone" in volume.get_icon().to_string():
                 phone = True
         except Exception as e:
-                print("Error in get_symbolic_icon(): {}".format(e))
+            print("Error in get_symbolic_icon(): {}".format(e))
 
         return phone
 
@@ -1606,7 +1606,7 @@ class MainWindow:
 
     def on_btn_mount_clicked(self, button):
         try:
-            mount  = button._volume.get_mount()
+            mount = button._volume.get_mount()
         except:
             mount = button._volume
 
@@ -1617,7 +1617,6 @@ class MainWindow:
                 self.on_btn_mount_connect_clicked(button=None, from_saved=True, saved_uri=mount)
             else:
                 subprocess.run(["xdg-open", mount.get_root().get_path()])
-
 
     def on_btn_unmount_clicked(self, button):
         self.actioned_volume = button
@@ -1665,7 +1664,6 @@ class MainWindow:
         command = [os.path.dirname(os.path.abspath(__file__)) + "/Unmount.py", "unmount", mount_point]
         self.startProcess(command)
 
-
     def on_btn_eject_clicked(self, button):
         self.actioned_volume = button
 
@@ -1705,6 +1703,7 @@ class MainWindow:
             summary = _("Device ejected.")
             body = button._volume.get_name()
             print("{} is not mounted, ejecting".format(body))
+
             def on_ejected(volume, task):
                 try:
                     volume.eject_with_operation_finish(task)
@@ -1725,6 +1724,7 @@ class MainWindow:
                         self.spinner_harddrive.stop()
                     print("{}".format(e))
                     return False
+
             button._volume.eject_with_operation(Gio.MountUnmountFlags.FORCE, self.mount_operation, None, on_ejected)
 
     def disable_unmount_eject_buttons(self):
@@ -1754,7 +1754,7 @@ class MainWindow:
 
     def on_volume_row_activated(self, listbox, row):
         try:
-            mount  = row._volume.get_mount()
+            mount = row._volume.get_mount()
         except:
             mount = row._volume
 
@@ -1828,7 +1828,8 @@ class MainWindow:
             btn_mount_on_startup._volume = button._volume
 
             mount_point = mount.get_root().get_path()
-            selected_volume_info = DiskManager.get_file_info(mount_point, network=True if button._main_type == "network" else False)
+            selected_volume_info = DiskManager.get_file_info(mount_point,
+                                                             network=True if button._main_type == "network" else False)
             btn_mount_on_startup.set_active(DiskManager.is_drive_automounted(selected_volume_info["device"]))
             btn_mount_on_startup._device = selected_volume_info["device"]
 
@@ -1851,7 +1852,7 @@ class MainWindow:
             if button._type == "phone":
                 self.showVolumeSizes(button)
         else:
-           print("saved drive")
+            print("saved drive")
 
     def on_popover_closed(self, popover):
         # auto refresh control of disks
@@ -1947,13 +1948,25 @@ class MainWindow:
                 print("{}".format(e))
         self.control_defaults()
 
+    def on_sw_hide_desktopicon_state_set(self, switch, state):
+        user_config_hide_desktopicon = self.UserSettings.config_hide_desktopicon
+        if state != user_config_hide_desktopicon:
+            print("Updating hide desktop icon state")
+            try:
+                self.UserSettings.writeConfig(hidedesktopicon=state)
+                self.user_settings()
+                self.UserSettings.set_hide_desktopicon(state)
+            except Exception as e:
+                print("{}".format(e))
+        self.control_defaults()
+
     # Popover Menu Buttons:
     def on_button_mount_on_startup_clicked(self, button):
         DiskManager.set_automounted(button._device, button.get_active())
 
     # def on_cb_mount_on_startup_released(self, cb):
     #     DiskManager.set_automounted(self.selected_volume_info["device"], cb.get_active())
-    
+
     def on_btn_format_removable_clicked(self, button):
         mount_point = button._volume.get_mount().get_root().get_path()
         file_info = DiskManager.get_file_info(mount_point)
@@ -2005,7 +2018,6 @@ class MainWindow:
             GLib.idle_add(self.mount_paths.clear)
             GLib.idle_add(self.net_mounts.clear)
 
-
     def control_save_server_button(self, button, uri, name):
         servers = self.UserSettings.getSavedServer()
         # self.btn_save_removable.set_sensitive(not any(d["uri"] == uri for d in servers))
@@ -2014,7 +2026,6 @@ class MainWindow:
             button._stack_bookmark.set_visible_child_name("delete")
         else:
             button._stack_bookmark.set_visible_child_name("add")
-
 
     def network_mount_success(self, uri, name, from_places=False):
         if not from_places:
@@ -2037,7 +2048,6 @@ class MainWindow:
         else:
             if self.UserSettings.config_closeapp_usb:
                 self.window.get_application().quit()
-
 
     def add_to_recent_listbox(self, uri, name):
         label = Gtk.Label.new()
@@ -2096,7 +2106,7 @@ class MainWindow:
             self.spinner_header.stop()
             try:
                 source_object.mount_enclosing_volume_finish(res)
-                uri,name = get_uri_name(source_object)
+                uri, name = get_uri_name(source_object)
                 self.network_mount_success(uri, name, from_places=from_places)
                 return True
             except GLib.GError as err:
@@ -2147,7 +2157,7 @@ class MainWindow:
                 self.box_password.set_visible(False)
                 self.box_password_options.set_visible(False)
 
-            if Gio.AskPasswordFlags.SAVING_SUPPORTED  & flags:
+            if Gio.AskPasswordFlags.SAVING_SUPPORTED & flags:
                 self.box_password_options.set_visible(True)
             else:
                 self.box_password_options.set_visible(False)
@@ -2215,7 +2225,6 @@ class MainWindow:
             file.mount_enclosing_volume(Gio.MountMountFlags.NONE, mount_operation, None, on_mounted)
 
         self.spinner_header.start()
-
 
     def on_mount_anonym_options_toggled(self, widget):
         self.box_user_domain_pass.set_sensitive(not widget.get_active())
@@ -2290,6 +2299,7 @@ class MainWindow:
         self.UserSettings.createDefaultConfig(force=True)
         self.user_settings()
         self.sw_hide_places.set_state(self.UserSettings.config_hide_places)
+        self.sw_hide_desktopicon.set_state(self.UserSettings.config_hide_desktopicon)
         self.sw_closeapp_main.set_state(self.UserSettings.config_closeapp_main)
         self.sw_closeapp_hdd.set_state(self.UserSettings.config_closeapp_hdd)
         self.sw_closeapp_usb.set_state(self.UserSettings.config_closeapp_usb)
@@ -2304,16 +2314,18 @@ class MainWindow:
 
         self.set_places()
         self.control_places_show(displaycontrol=True)
+        self.UserSettings.set_hide_desktopicon(self.UserSettings.default_hide_desktopicon)
 
     def control_defaults(self):
         if self.UserSettings.config_closeapp_main != self.UserSettings.default_closeapp_main or \
-            self.UserSettings.config_closeapp_hdd != self.UserSettings.default_closeapp_hdd or \
-            self.UserSettings.config_closeapp_usb != self.UserSettings.default_closeapp_usb or \
-            self.UserSettings.config_autorefresh != self.UserSettings.default_autorefresh or \
-            self.UserSettings.config_autorefresh_time != self.UserSettings.default_autorefresh_time or \
-            self.UserSettings.config_hide_places != self.UserSettings.default_hide_places or \
-            self.UserSettings.config_window_remember_size != self.UserSettings.default_window_remember_size or \
-            self.UserSettings.config_window_use_darktheme != self.UserSettings.default_window_use_darktheme:
+                self.UserSettings.config_closeapp_hdd != self.UserSettings.default_closeapp_hdd or \
+                self.UserSettings.config_closeapp_usb != self.UserSettings.default_closeapp_usb or \
+                self.UserSettings.config_autorefresh != self.UserSettings.default_autorefresh or \
+                self.UserSettings.config_autorefresh_time != self.UserSettings.default_autorefresh_time or \
+                self.UserSettings.config_hide_places != self.UserSettings.default_hide_places or \
+                self.UserSettings.config_hide_desktopicon != self.UserSettings.default_hide_desktopicon or \
+                self.UserSettings.config_window_remember_size != self.UserSettings.default_window_remember_size or \
+                self.UserSettings.config_window_use_darktheme != self.UserSettings.default_window_use_darktheme:
             self.btn_defaults.set_sensitive(True)
         else:
             self.btn_defaults.set_sensitive(False)
@@ -2546,8 +2558,6 @@ class MainWindow:
 
         mount.unmount_with_operation(Gio.MountUnmountFlags.FORCE, self.mount_operation, None, on_unmounted)
 
-
-
     def startEjectProcess(self, params):
         pid, stdin, stdout, stderr = GLib.spawn_async(params, flags=GLib.SpawnFlags.DO_NOT_REAP_CHILD,
                                                       standard_output=True, standard_error=True)
@@ -2601,7 +2611,8 @@ class MainWindow:
                 print("{}".format(e))
                 return False
 
-        self.actioned_volume._volume.eject_with_operation(Gio.MountUnmountFlags.FORCE, self.mount_operation, None, on_ejected)
+        self.actioned_volume._volume.eject_with_operation(Gio.MountUnmountFlags.FORCE, self.mount_operation, None,
+                                                          on_ejected)
 
     def notify(self, message_summary="", message_body="", icon="mauna-mycomputer"):
         try:

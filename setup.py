@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import os
+import subprocess
+
 from setuptools import setup, find_packages
-import os, subprocess
 
 
 def create_mo_files():
@@ -31,25 +33,34 @@ if os.path.exists(changelog):
     f.write(version)
     f.close()
 
-
 data_files = [
-    ("/usr/share/applications/", ["top.mauna.mycomputer.desktop"]),
-    ("/usr/share/mauna/mauna-mycomputer/", ["mauna-mycomputer.svg"]),
-    ("/usr/share/mauna/mauna-mycomputer/src", [
-        "src/Main.py",
-        "src/MainWindow.py",
-        "src/DiskManager.py",
-        "src/Unmount.py",
-        "src/UserSettings.py",
-        "src/__version__"
-    ]),
-    ("/usr/share/mauna/mauna-mycomputer/ui", ["ui/MainWindow.glade"]),
-    ("/usr/share/mauna/mauna-mycomputer/autostart/", ["autostart/mauna-mycomputer-add-to-desktop"]),
-    ("/usr/share/mauna/mauna-mycomputer/css/", ["css/style.css"]),
-    ("/etc/xdg/autostart", ["autostart/mauna-mycomputer-add-to-desktop.desktop"]),
-    ("/usr/bin/", ["mauna-mycomputer"]),
-    ("/usr/share/icons/hicolor/scalable/apps/", ["mauna-mycomputer.svg"])
-] + create_mo_files()
+                 ("/usr/share/applications/",
+                  ["top.mauna.mycomputer.desktop"]),
+                 ("/usr/share/mauna/mauna-mycomputer/",
+                  ["mauna-mycomputer.svg"]),
+                 ("/usr/share/mauna/mauna-mycomputer/src", [
+                     "src/Main.py",
+                     "src/MainWindow.py",
+                     "src/DiskManager.py",
+                     "src/Unmount.py",
+                     "src/UserSettings.py",
+                     "src/__version__"
+                 ]),
+                 ("/usr/share/mauna/mauna-mycomputer/ui",
+                  ["ui/MainWindow.glade"]),
+                 ("/usr/share/mauna/mauna-mycomputer/autostart/",
+                  ["autostart/mauna-mycomputer-add-to-desktop"]),
+                 ("/usr/share/mauna/mauna-mycomputer/css/",
+                  ["css/style.css"]),
+                 ("/etc/xdg/autostart",
+                  ["autostart/mauna-mycomputer-add-to-desktop.desktop"]),
+                 ("/usr/bin/",
+                  ["mauna-mycomputer"]),
+                 ("/usr/share/icons/hicolor/scalable/apps/", [
+                     "mauna-mycomputer.svg",
+                     "mauna-mycomputer-emblem-mauna-symbolic.svg"
+                 ])
+             ] + create_mo_files()
 
 setup(
     name="mauna-mycomputer",
