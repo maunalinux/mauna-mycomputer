@@ -1,3 +1,17 @@
+mauna-mycomputer (1.0.3) mauna; urgency=medium
+
+  * New upstream release
+  * Fix subprocess on get_file_info func
+  * Add exception to subprocess
+  * Add GLib markup_escape_text to device name
+  * Reformat DiskManager.py
+  * Reformat code
+  * Update icons
+  * Fix typo
+  * Update copyright
+
+ -- Mauna Linux <dev@maunalinux.top>  Fri, 03 Jan 2025 19:34:21 -0300
+
 mauna-mycomputer (1.0.2) mauna; urgency=medium
 
   * New upstream version
