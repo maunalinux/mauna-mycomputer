@@ -57,8 +57,7 @@ data_files = [
                  ("/usr/bin/",
                   ["mauna-mycomputer"]),
                  ("/usr/share/icons/hicolor/scalable/apps/", [
-                     "mauna-mycomputer.svg",
-                     "mauna-mycomputer-emblem-mauna-symbolic.svg"
+                     "mauna-mycomputer.svg"
                  ])
              ] + create_mo_files()
 
