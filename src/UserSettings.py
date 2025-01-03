@@ -80,7 +80,7 @@ class UserSettings(object):
             'CloseAppUSB': self.default_closeapp_usb,
             'AutoRefresh': self.default_autorefresh,
             'AutoRefreshTime': self.default_autorefresh_time,
-            'HidePlaces': self.default_hide_places
+            'HidePlaces': self.default_hide_places,
             'HideDesktopIcon': self.default_hide_desktopicon
         }
 
@@ -168,7 +168,7 @@ class UserSettings(object):
             'CloseAppUSB': closeappusb,
             'AutoRefresh': autorefresh,
             'AutoRefreshTime': autorefreshtime,
-            'HidePlaces': hideplaces
+            'HidePlaces': hideplaces,
             'HideDesktopIcon': hidedesktopicon
         }
 
